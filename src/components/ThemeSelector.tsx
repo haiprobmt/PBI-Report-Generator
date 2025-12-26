@@ -2,7 +2,8 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { PowerBITheme } from '@/lib/types';
-import { Palette, Pencil } from '@phosphor-icons/react';
+import { Palette, Pencil, DownloadSimple } from '@phosphor-icons/react';
+import { toast } from 'sonner';
 
 interface ThemeSelectorProps {
   selectedTheme: PowerBITheme;
@@ -10,6 +11,21 @@ interface ThemeSelectorProps {
 }
 
 export function ThemeSelector({ selectedTheme, onCustomize }: ThemeSelectorProps) {
+  const handleDownloadTheme = () => {
+    const themeJson = JSON.stringify(selectedTheme, null, 2);
+    const blob = new Blob([themeJson], { type: 'application/json' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${selectedTheme.name.toLowerCase().replace(/\s+/g, '-')}-theme.json`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+    
+    toast.success('Theme downloaded successfully!');
+  };
+
   return (
     <Card className="p-6">
       <div className="flex items-start justify-between mb-4">
@@ -17,10 +33,16 @@ export function ThemeSelector({ selectedTheme, onCustomize }: ThemeSelectorProps
           <h3 className="font-semibold text-lg mb-1">Selected Theme</h3>
           <p className="text-sm text-muted-foreground">Applied to generated report</p>
         </div>
-        <Button variant="outline" onClick={onCustomize} className="gap-2">
-          <Pencil size={18} />
-          Customize
-        </Button>
+        <div className="flex gap-2">
+          <Button variant="outline" onClick={handleDownloadTheme} className="gap-2">
+            <DownloadSimple size={18} weight="bold" />
+            Download
+          </Button>
+          <Button variant="outline" onClick={onCustomize} className="gap-2">
+            <Pencil size={18} />
+            Customize
+          </Button>
+        </div>
       </div>
 
       <div className="space-y-4">
