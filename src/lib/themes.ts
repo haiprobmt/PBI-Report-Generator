@@ -30,6 +30,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Corporate Blue',
     description: 'Professional blue palette for business reports',
     tags: ['Business', 'Professional'],
+    category: 'business',
     theme: {
       name: 'Corporate Blue',
       dataColors: [
@@ -59,6 +60,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Sunset Warm',
     description: 'Warm, energetic colors inspired by sunset',
     tags: ['Creative', 'Warm'],
+    category: 'creative',
     theme: {
       name: 'Sunset Warm',
       dataColors: [
@@ -88,6 +90,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Forest Green',
     description: 'Natural, calming green tones',
     tags: ['Nature', 'Sustainability'],
+    category: 'nature',
     theme: {
       name: 'Forest Green',
       dataColors: [
@@ -117,6 +120,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Ocean Depths',
     description: 'Deep blues and teals for data depth',
     tags: ['Cool', 'Professional'],
+    category: 'business',
     theme: {
       name: 'Ocean Depths',
       dataColors: [
@@ -146,6 +150,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Modern Purple',
     description: 'Contemporary purple palette with contrast',
     tags: ['Modern', 'Creative'],
+    category: 'creative',
     theme: {
       name: 'Modern Purple',
       dataColors: [
@@ -175,6 +180,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Monochrome',
     description: 'Elegant grayscale for minimalist reports',
     tags: ['Minimal', 'Elegant'],
+    category: 'minimal',
     theme: {
       name: 'Monochrome',
       dataColors: [
@@ -204,6 +210,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Vibrant Energy',
     description: 'Bold, high-contrast colors for impact',
     tags: ['Bold', 'Energetic'],
+    category: 'bold',
     theme: {
       name: 'Vibrant Energy',
       dataColors: [
@@ -233,6 +240,7 @@ export const PRESET_THEMES: ThemePreset[] = [
     name: 'Earth Tones',
     description: 'Warm, grounded browns and oranges',
     tags: ['Warm', 'Natural'],
+    category: 'nature',
     theme: {
       name: 'Earth Tones',
       dataColors: [

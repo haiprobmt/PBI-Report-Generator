@@ -34,11 +34,18 @@ This app provides theme customization, live preview, and export functionality bu
 - **Success criteria**: Exported JSON is valid and imports successfully into Power BI Desktop
 
 ### Preset Templates
-- **Functionality**: Pre-configured color schemes users can apply as starting points
-- **Purpose**: Speeds up theme creation by providing professional starting points
-- **Trigger**: User selects a preset template from gallery
-- **Progression**: Browse presets → Click desired preset → All colors update → User customizes as needed → Export final theme
-- **Success criteria**: Presets load instantly and provide diverse, professional color combinations
+- **Functionality**: Pre-configured color schemes users can apply as starting points, organized by category and searchable
+- **Purpose**: Speeds up theme creation by providing professional starting points that users can easily discover
+- **Trigger**: User selects a preset template from gallery, optionally filtering by category or searching
+- **Progression**: Browse presets → Filter by category or search → Click desired preset → All colors update → User customizes as needed → Export final theme
+- **Success criteria**: Presets load instantly, provide diverse professional color combinations, and are easily discoverable through search and filtering
+
+### Theme Search and Filtering
+- **Functionality**: Real-time search and category-based filtering of preset themes
+- **Purpose**: Helps users quickly find relevant themes from a large collection
+- **Trigger**: User types in search box or clicks category badge
+- **Progression**: Open preset dialog → Type search query or select category → Results filter instantly → User reviews filtered presets → Select desired preset
+- **Success criteria**: Search matches theme names, descriptions, and tags; category filters work accurately; results update instantly
 
 ### Reset Functionality
 - **Functionality**: Restore all colors to default Power BI theme

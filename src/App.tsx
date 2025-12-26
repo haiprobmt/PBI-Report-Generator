@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { useKV } from '@github/spark/hooks';
 import { PowerBITheme } from '@/lib/types';
 import { DEFAULT_THEME, PRESET_THEMES } from '@/lib/themes';
@@ -14,14 +14,37 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Separator } from '@/components/ui/separator';
+import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
-import { DownloadSimple, ArrowCounterClockwise, Palette, Sparkle } from '@phosphor-icons/react';
+import { DownloadSimple, ArrowCounterClockwise, Palette, Sparkle, MagnifyingGlass } from '@phosphor-icons/react';
 
 function App() {
   const [theme, setTheme] = useKV<PowerBITheme>('powerbi-theme', DEFAULT_THEME);
   const [presetDialogOpen, setPresetDialogOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedCategory, setSelectedCategory] = useState<string>('all');
 
   const currentTheme: PowerBITheme = theme ?? DEFAULT_THEME;
+
+  const categories = [
+    { id: 'all', label: 'All Themes', count: PRESET_THEMES.length },
+    { id: 'business', label: 'Business', count: PRESET_THEMES.filter(p => p.category === 'business').length },
+    { id: 'creative', label: 'Creative', count: PRESET_THEMES.filter(p => p.category === 'creative').length },
+    { id: 'nature', label: 'Nature', count: PRESET_THEMES.filter(p => p.category === 'nature').length },
+    { id: 'minimal', label: 'Minimal', count: PRESET_THEMES.filter(p => p.category === 'minimal').length },
+    { id: 'bold', label: 'Bold', count: PRESET_THEMES.filter(p => p.category === 'bold').length },
+  ];
+
+  const filteredPresets = useMemo(() => {
+    return PRESET_THEMES.filter(preset => {
+      const matchesCategory = selectedCategory === 'all' || preset.category === selectedCategory;
+      const matchesSearch = searchQuery === '' || 
+        preset.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        preset.description.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        preset.tags.some(tag => tag.toLowerCase().includes(searchQuery.toLowerCase()));
+      return matchesCategory && matchesSearch;
+    });
+  }, [selectedCategory, searchQuery]);
 
   const updateThemeField = <K extends keyof PowerBITheme>(
     field: K,
@@ -116,16 +139,51 @@ function App() {
                         Choose from professionally designed presets to get started quickly
                       </DialogDescription>
                     </DialogHeader>
-                    <ScrollArea className="h-[60vh] pr-4">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                        {PRESET_THEMES.map((preset) => (
-                          <PresetCard
-                            key={preset.id}
-                            preset={preset}
-                            onSelect={() => applyPreset(preset.theme)}
-                          />
+                    
+                    <div className="space-y-4">
+                      <div className="relative">
+                        <MagnifyingGlass className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" size={20} />
+                        <Input
+                          id="preset-search"
+                          placeholder="Search themes by name, description, or tags..."
+                          value={searchQuery}
+                          onChange={(e) => setSearchQuery(e.target.value)}
+                          className="pl-10"
+                        />
+                      </div>
+                      
+                      <div className="flex flex-wrap gap-2">
+                        {categories.map(cat => (
+                          <Badge
+                            key={cat.id}
+                            variant={selectedCategory === cat.id ? 'default' : 'outline'}
+                            className="cursor-pointer hover:bg-accent/50 transition-colors px-3 py-1.5"
+                            onClick={() => setSelectedCategory(cat.id)}
+                          >
+                            {cat.label} ({cat.count})
+                          </Badge>
                         ))}
                       </div>
+                    </div>
+
+                    <ScrollArea className="h-[50vh] pr-4">
+                      {filteredPresets.length === 0 ? (
+                        <div className="flex flex-col items-center justify-center py-12 text-center">
+                          <Palette size={48} weight="light" className="text-muted-foreground mb-4" />
+                          <p className="text-muted-foreground font-medium">No themes found</p>
+                          <p className="text-sm text-muted-foreground mt-1">Try adjusting your search or filter</p>
+                        </div>
+                      ) : (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                          {filteredPresets.map((preset) => (
+                            <PresetCard
+                              key={preset.id}
+                              preset={preset}
+                              onSelect={() => applyPreset(preset.theme)}
+                            />
+                          ))}
+                        </div>
+                      )}
                     </ScrollArea>
                   </DialogContent>
                 </Dialog>

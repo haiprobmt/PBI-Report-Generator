@@ -19,4 +19,5 @@ export interface ThemePreset {
   description: string;
   theme: PowerBITheme;
   tags: string[];
+  category: 'business' | 'creative' | 'nature' | 'minimal' | 'bold';
 }
