@@ -12,7 +12,7 @@ const steps: { id: WorkflowStep; label: string; number: number }[] = [
   { id: 'requirements', label: 'Requirements', number: 2 },
   { id: 'theme', label: 'Select Theme', number: 3 },
   { id: 'generate', label: 'Generate Report', number: 4 },
-  { id: 'complete', label: 'Download', number: 5 },
+  { id: 'complete', label: 'Result', number: 5 },
 ];
 
 export function StepIndicator({ currentStep, onStepClick }: StepIndicatorProps) {
@@ -47,7 +47,7 @@ export function StepIndicator({ currentStep, onStepClick }: StepIndicatorProps) 
                 )}
               >
                 {isStepComplete(index) ? (
-                  <CheckCircle size={24} weight="fill" />
+                  <CheckCircle size={24} weight="fill" className="text-green-500" />
                 ) : (
                   <span className="font-semibold">{step.number}</span>
                 )}
