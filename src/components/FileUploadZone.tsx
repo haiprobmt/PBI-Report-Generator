@@ -1,7 +1,7 @@
 import { useState, useRef, DragEvent } from 'react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { CloudArrowUp, FileArrowUp, CheckCircle } from '@phosphor-icons/react';
+import { CloudArrowUp, Folder, CheckCircle } from '@phosphor-icons/react';
 import { cn } from '@/lib/utils';
 
 interface FileUploadZoneProps {
@@ -65,51 +65,51 @@ export function FileUploadZone({ onFilesSelected, isUploaded, uploadedFileName }
       onDragOver={handleDragOver}
       onDrop={handleDrop}
     >
-      <div className="p-12 text-center">
+      <div className="p-16 text-center">
         <input
           ref={inputRef}
           type="file"
           multiple
           onChange={handleFileChange}
           className="hidden"
-          accept=".bim,.json,.pbix"
+          accept=".bim,.json,.pbix,.tmdl"
           id="file-upload-input"
         />
         
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-6">
           {isUploaded ? (
             <>
-              <div className="rounded-full bg-accent/10 p-4">
-                <CheckCircle size={48} weight="fill" className="text-accent" />
+              <div className="rounded-full bg-green-100 p-6">
+                <CheckCircle size={56} weight="fill" className="text-green-600" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1">Model Uploaded</h3>
+                <h3 className="text-xl font-semibold mb-2">Model Uploaded</h3>
                 <p className="text-sm text-muted-foreground">{uploadedFileName}</p>
               </div>
-              <Button variant="outline" onClick={handleClick}>
-                <FileArrowUp size={20} className="mr-2" />
-                Upload Different Model
+              <Button variant="outline" onClick={handleClick} size="lg" className="gap-2">
+                <Folder size={20} />
+                Select Different Folder
               </Button>
             </>
           ) : (
             <>
               <div className={cn(
-                'rounded-full bg-primary/10 p-4 transition-transform',
+                'rounded-full bg-primary/10 p-6 transition-transform',
                 isDragging && 'scale-110'
               )}>
-                <CloudArrowUp size={48} weight="duotone" className="text-primary" />
+                <CloudArrowUp size={56} weight="duotone" className="text-primary" />
               </div>
               <div>
-                <h3 className="text-lg font-semibold mb-1">
+                <h3 className="text-xl font-semibold mb-2">
                   {isDragging ? 'Drop files here' : 'Upload Semantic Model'}
                 </h3>
                 <p className="text-sm text-muted-foreground max-w-md">
-                  Drag and drop your semantic model files (.bim, .json, .pbix) or click to browse
+                  Select your TMDL folder containing the semantic model definition files (.tmdl)
                 </p>
               </div>
-              <Button onClick={handleClick} size="lg">
-                <FileArrowUp size={20} className="mr-2" />
-                Browse Files
+              <Button onClick={handleClick} size="lg" className="gap-2">
+                <Folder size={20} />
+                Select TMDL Folder
               </Button>
             </>
           )}
