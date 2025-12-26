@@ -1,68 +1,69 @@
-# Power BI Theme Generator
+# Power BI Report Generator
 
-A dynamic tool for creating customized Power BI theme JSON files with live preview and instant export capabilities.
+An intelligent tool for generating complete Power BI reports from semantic models with custom themes, featuring AI-powered report creation with real-time progress tracking.
 
 **Experience Qualities**:
-1. **Efficient** - Users can quickly generate and export professional Power BI themes without manual JSON editing
-2. **Visual** - Real-time color preview and visual feedback make it easy to see exactly how themes will look
-3. **Professional** - Clean, polished interface that reflects the quality of output users expect for business intelligence tools
+1. **Intelligent** - AI agent automatically generates comprehensive reports from semantic models, understanding data relationships and creating meaningful visualizations
+2. **Transparent** - Real-time progress updates show exactly what the agent is doing at each step, building confidence and understanding
+3. **Professional** - Enterprise-grade interface combining sophisticated AI capabilities with polished, intuitive design
 
-**Complexity Level**: Light Application (multiple features with basic state)
-This app provides theme customization, live preview, and export functionality but maintains a focused single-page experience without complex state management or multiple views.
+**Complexity Level**: Complex Application (advanced functionality with multiple views and AI integration)
+This app orchestrates semantic model uploads, custom theme generation, AI-powered report creation with streaming progress updates, and multiple export options across different views and workflows.
 
 ## Essential Features
 
-### Color Palette Customization
-- **Functionality**: Interactive color pickers for all Power BI theme color slots (primary, secondary, accent colors, data colors, etc.)
-- **Purpose**: Allows users to create cohesive, branded themes for their Power BI reports
-- **Trigger**: User clicks on any color swatch
-- **Progression**: Click color swatch → Color picker opens → User selects color → Preview updates instantly → Color value saved
-- **Success criteria**: All color changes reflect immediately in preview and in exported JSON
+### Semantic Model Upload
+- **Functionality**: Drag-and-drop or click-to-browse file upload for Power BI semantic model folders (containing .bim or dataset files)
+- **Purpose**: Provides the data structure foundation for AI-powered report generation
+- **Trigger**: User drags folder to drop zone or clicks browse button
+- **Progression**: Select folder → Files validate → Upload progress indicator → Model parsed → Ready state confirmed → User proceeds to theme selection
+- **Success criteria**: Successfully accepts semantic model folders, validates structure, provides clear feedback on upload status and any issues
 
-### Live Theme Preview
-- **Functionality**: Visual representation showing how selected colors appear in typical Power BI report elements (charts, cards, tables)
-- **Purpose**: Eliminates guesswork by showing real-time preview of theme appearance
-- **Trigger**: Automatic on any color change
-- **Progression**: Color selected → Preview components update → User evaluates appearance → Makes adjustments as needed
-- **Success criteria**: Preview accurately represents Power BI's rendering of the theme colors
+### Custom Theme Selection
+- **Functionality**: Access to the full theme generator with presets, customization, and live preview
+- **Purpose**: Allows users to apply branded, professional themes to generated reports
+- **Trigger**: User navigates to theme step or clicks "Choose Theme" button
+- **Progression**: Browse preset themes → Filter/search options → Preview theme → Customize if needed → Select theme → Theme applied to generation workflow
+- **Success criteria**: All existing theme functionality works seamlessly, selected theme persists and applies to generated report
 
-### JSON Export
-- **Functionality**: One-click download of complete Power BI theme JSON file
-- **Purpose**: Provides ready-to-use theme file that can be imported directly into Power BI
-- **Trigger**: User clicks export/download button
-- **Progression**: Click export → JSON generated from current colors → File downloads with descriptive name → User imports into Power BI
-- **Success criteria**: Exported JSON is valid and imports successfully into Power BI Desktop
+### AI Report Generation
+- **Functionality**: AI agent analyzes semantic model and generates comprehensive Power BI report with multiple visualizations
+- **Purpose**: Automatically creates professional, insight-rich reports without manual design work
+- **Trigger**: User clicks "Generate Report" button after uploading model and selecting theme
+- **Progression**: Click generate → Agent initializes → Progress stream begins → Agent analyzes model → Creates visualizations → Applies theme → Finalizes report → Download ready
+- **Success criteria**: Agent successfully generates valid Power BI report file, process completes within reasonable time, result matches theme and model structure
 
-### Preset Templates
-- **Functionality**: Pre-configured color schemes users can apply as starting points, organized by category and searchable
-- **Purpose**: Speeds up theme creation by providing professional starting points that users can easily discover
-- **Trigger**: User selects a preset template from gallery, optionally filtering by category or searching
-- **Progression**: Browse presets → Filter by category or search → Click desired preset → All colors update → User customizes as needed → Export final theme
-- **Success criteria**: Presets load instantly, provide diverse professional color combinations, and are easily discoverable through search and filtering
+### Real-time Progress Display
+- **Functionality**: Live streaming updates showing agent's current task, step-by-step progress with status indicators
+- **Purpose**: Maintains user engagement and confidence by showing transparent, real-time generation progress
+- **Trigger**: Automatic when report generation begins
+- **Progression**: Generation starts → Progress panel appears → Status updates stream in real-time → Visual progress indicators advance → Completion state shows → Actions become available
+- **Success criteria**: Progress updates appear smoothly without lag, clearly communicate current status, provide time estimates, handle errors gracefully
 
-### Theme Search and Filtering
-- **Functionality**: Real-time search and category-based filtering of preset themes
-- **Purpose**: Helps users quickly find relevant themes from a large collection
-- **Trigger**: User types in search box or clicks category badge
-- **Progression**: Open preset dialog → Type search query or select category → Results filter instantly → User reviews filtered presets → Select desired preset
-- **Success criteria**: Search matches theme names, descriptions, and tags; category filters work accurately; results update instantly
+### Report Download
+- **Functionality**: One-click download of generated .pbix Power BI report file
+- **Purpose**: Provides the generated report file for import into Power BI Desktop
+- **Trigger**: User clicks "Download Report" button after generation completes
+- **Progression**: Click download → File generates → Browser download initiates → File saved locally → User can open in Power BI Desktop
+- **Success criteria**: Downloaded .pbix file is valid, opens successfully in Power BI Desktop, contains expected visualizations and applied theme
 
-### Reset Functionality
-- **Functionality**: Restore all colors to default Power BI theme
-- **Purpose**: Allows users to start fresh without page reload
-- **Trigger**: User clicks reset button
-- **Progression**: Click reset → Confirmation prompt → Colors revert to defaults → Preview updates
-- **Success criteria**: All customizations cleared, returning to default Power BI theme state
+### Open in Power BI
+- **Functionality**: Direct link or button to open generated report in Power BI web service
+- **Purpose**: Provides immediate preview and editing access without desktop software
+- **Trigger**: User clicks "Open in Power BI" button after generation completes
+- **Progression**: Click open → Authentication if needed → Report opens in new tab → User can view/edit in Power BI Service
+- **Success criteria**: Successfully opens report in Power BI web interface, maintains theme and visualizations, provides full editing capabilities
 
 ## Edge Case Handling
-- **Invalid Color Input** - Validate hex codes and prevent invalid color values from breaking the theme
-- **Browser Compatibility** - Ensure color pickers work across all modern browsers with fallbacks
-- **Large Export** - Handle JSON generation efficiently even with extensive color customization
-- **Accessibility** - Provide keyboard navigation and screen reader support for color selection
-- **Mobile Experience** - Adapt color picker interface for touch devices with appropriate sizing
+- **Invalid Model Files** - Detect and provide clear error messages for unsupported or corrupted semantic model files
+- **Large File Uploads** - Handle large semantic models with chunked upload progress and validation
+- **Generation Failures** - Gracefully handle AI generation errors with retry options and helpful troubleshooting
+- **Network Interruptions** - Persist progress state and allow resumption if connection drops during generation
+- **Browser Compatibility** - Ensure file upload and download work across all modern browsers
+- **Timeout Handling** - Provide clear feedback and options if generation takes unexpectedly long
 
 ## Design Direction
-The design should evoke precision, professionalism, and creative control. It should feel like a sophisticated design tool that business analysts and data professionals trust. The interface should have a studio-quality feel—clean, organized, and purposeful—with visual elements that suggest data visualization and business intelligence.
+The design should evoke intelligence, capability, and trust. It should feel like a sophisticated AI-powered tool that enterprise teams rely on for mission-critical reporting. The interface should balance technical sophistication with approachability—powerful enough for data professionals but intuitive for business users. Progress and status should be communicated with clarity and visual polish that reinforces the quality of the AI-generated output.
 
 ## Color Selection
 
@@ -92,47 +93,50 @@ Animations should feel precise and responsive, reinforcing the professional tool
 
 ## Component Selection
 - **Components**:
-  - `Card` - Main theme editor container with elevated shadow
-  - `Button` - Primary (export), secondary (reset), and ghost variants (presets)
-  - `Input` - For hex code entry with validation styling
-  - `Label` - Color field identifiers with clear typography
-  - `Tabs` - Organize color categories (data colors, background colors, sentiment colors)
-  - `Dialog` - Preset template selection gallery
-  - `Tooltip` - Explain Power BI color slot purposes
-  - `ScrollArea` - Smooth scrolling for long color lists
-  - `Badge` - Category tags for preset templates
+  - `Card` - Semantic model upload area, theme selector, progress panel with elevated styling
+  - `Button` - Primary (generate, download), secondary (choose theme, open PBI), and outline variants
+  - `Input` - File path display and theme name with validation
+  - `Label` - Step identifiers and field labels with clear hierarchy
+  - `Tabs` - Organize generation workflow steps (upload, theme, generate)
+  - `Dialog` - Theme preset selection gallery
+  - `Progress` - Visual progress bar for file upload and generation stages
+  - `Badge` - Status indicators (uploading, analyzing, generating, complete)
+  - `ScrollArea` - Progress log viewer and theme preview
+  - `Separator` - Visual breaks between workflow sections
   
 - **Customizations**:
-  - **ColorSwatch Component** - Custom interactive color display showing current color with click-to-edit functionality
-  - **ThemePreview Component** - Custom visualization showing bar chart, donut chart, and card mockups styled with current theme
-  - **PresetCard Component** - Visual preset template cards showing miniature color palettes
+  - **FileUploadZone Component** - Custom drag-and-drop area with visual feedback for hover/drop states
+  - **ProgressStream Component** - Real-time log display with auto-scroll and status icons
+  - **GenerationStatus Component** - Multi-stage progress indicator with current step highlighting
+  - **ThemeSelector Component** - Compact theme preview with quick access to full customization
   
 - **States**:
-  - Buttons: Hover lifts slightly (translateY -2px) with shadow increase; active scales down (0.95); disabled reduces opacity to 50%
-  - Color swatches: Hover shows edit icon overlay; active shows prominent ring; focus has keyboard-accessible outline
-  - Inputs: Focus has cyan accent ring; error shows red border with shake animation; valid shows subtle green check
+  - Buttons: Hover elevates with shadow; active scales slightly; disabled shows opacity 50% with cursor not-allowed; loading shows spinner
+  - Upload zone: Hover shows border pulse; drag-over shows highlighted border and background; uploading shows progress overlay
+  - Progress items: In-progress shows animated spinner; complete shows green check; error shows red warning icon
+  - Steps: Active step has primary color; completed steps show check; upcoming steps are muted
   
 - **Icon Selection**:
-  - Download (export functionality) - `ArrowDown` or `DownloadSimple`
-  - Reset - `ArrowCounterClockwise`
-  - Palette/templates - `Palette`
-  - Edit color - `Pencil`
-  - Preview - `Eye`
-  - Info/help - `Info`
-  - Copy - `Copy`
-  - Check (validation) - `Check`
+  - Upload - `UploadSimple` or `CloudArrowUp`
+  - Generate - `Sparkle` or `MagicWand`
+  - Download - `DownloadSimple`
+  - Open - `ArrowSquareOut` or `WindowsLogo`
+  - Progress states - `CircleNotch` (spinning), `CheckCircle`, `Warning`
+  - Theme - `Palette`
+  - Model - `Database` or `FileArrowUp`
+  - Steps - `NumberCircle` series
   
 - **Spacing**:
-  - Page padding: `p-6` on mobile, `p-8` on desktop
-  - Card padding: `p-6`
-  - Color grid gap: `gap-4`
-  - Section spacing: `space-y-6`
-  - Button group gap: `gap-3`
-  - Form field spacing: `space-y-4`
+  - Page padding: `p-6` on mobile, `p-10` on desktop
+  - Card padding: `p-8` for main areas, `p-6` for compact sections
+  - Upload zone padding: `p-12` to create generous target area
+  - Progress log gap: `gap-3` between log entries
+  - Step indicator gap: `gap-8` between steps
+  - Action button gap: `gap-4`
   
 - **Mobile**:
-  - Color grid switches from 4 columns to 2 columns below 768px
-  - Preview section stacks below controls on mobile
-  - Preset gallery shows 1 card per row on mobile vs 3 on desktop
-  - Floating export button on mobile positioned at bottom
-  - Touch targets minimum 44px for all interactive elements
+  - Workflow switches from horizontal steps to vertical on mobile
+  - Upload zone reduces padding but maintains min-height of 200px
+  - Progress panel becomes full-width below main content
+  - Action buttons stack vertically with full width
+  - Theme selector shows compact grid with 2 columns vs 4 on desktop

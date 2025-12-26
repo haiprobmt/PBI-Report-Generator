@@ -21,3 +21,27 @@ export interface ThemePreset {
   tags: string[];
   category: 'business' | 'creative' | 'nature' | 'minimal' | 'bold';
 }
+
+export interface SemanticModel {
+  id: string;
+  name: string;
+  files: File[];
+  uploadedAt: Date;
+  size: number;
+}
+
+export interface ProgressStep {
+  id: string;
+  message: string;
+  status: 'pending' | 'in-progress' | 'complete' | 'error';
+  timestamp: Date;
+}
+
+export interface GenerationResult {
+  reportFile: Blob;
+  reportName: string;
+  generatedAt: Date;
+  theme: PowerBITheme;
+}
+
+export type WorkflowStep = 'upload' | 'theme' | 'generate' | 'complete';
