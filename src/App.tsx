@@ -124,6 +124,15 @@ function App() {
             </p>
           </div>
 
+          <div className="mb-6">
+            <Tabs value={previewTab} onValueChange={setPreviewTab} className="w-full">
+              <TabsList className="grid w-full max-w-md mx-auto grid-cols-2">
+                <TabsTrigger value="colors">Theme Editor</TabsTrigger>
+                <TabsTrigger value="report">Report Preview</TabsTrigger>
+              </TabsList>
+            </Tabs>
+          </div>
+
           <div className="flex flex-col lg:flex-row gap-6 mb-8">
             <div className={previewTab === 'report' ? 'w-full' : 'flex-1 space-y-4'}>
               {previewTab === 'colors' && (
@@ -377,16 +386,7 @@ function App() {
             {previewTab === 'colors' && (
               <div className="lg:w-96">
                 <div className="lg:sticky lg:top-6">
-                  <Tabs value={previewTab} onValueChange={setPreviewTab} className="w-full">
-                    <TabsList className="grid w-full grid-cols-2">
-                      <TabsTrigger value="colors">Colors</TabsTrigger>
-                      <TabsTrigger value="report">Report</TabsTrigger>
-                    </TabsList>
-                    
-                    <TabsContent value="colors" className="mt-4">
-                      <ThemePreview theme={currentTheme} />
-                    </TabsContent>
-                  </Tabs>
+                  <ThemePreview theme={currentTheme} />
                 </div>
               </div>
             )}
