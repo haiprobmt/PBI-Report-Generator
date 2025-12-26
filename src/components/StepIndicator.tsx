@@ -43,7 +43,7 @@ export function StepIndicator({ currentStep, onStepClick }: StepIndicatorProps) 
                     'bg-primary border-primary text-primary-foreground scale-110 shadow-lg',
                   !isStepComplete(index) &&
                     !isStepCurrent(index) &&
-                    'bg-background border-border text-muted-foreground'
+                    'bg-white border-border text-muted-foreground'
                 )}
               >
                 {isStepComplete(index) ? (
