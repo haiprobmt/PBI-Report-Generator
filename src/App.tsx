@@ -309,8 +309,8 @@ function App() {
             <div className="max-w-3xl mx-auto">
               <Card className="p-8">
                 <div className="text-center mb-8">
-                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-accent/10 mb-4">
-                    <Sparkle size={32} weight="fill" className="text-accent" />
+                  <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-blue-100 mb-4">
+                    <Sparkle size={32} weight="fill" className="text-blue-500" />
                   </div>
                   <h2 className="text-2xl font-bold mb-2">Report Generated Successfully!</h2>
                   <p className="text-muted-foreground">
@@ -332,20 +332,20 @@ function App() {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
                     size="lg"
-                    onClick={handleDownloadReport}
-                    className="gap-2 flex-1"
+                    onClick={handleOpenInPowerBI}
+                    className="gap-2 flex-1 bg-green-600 hover:bg-green-700 text-white"
                   >
-                    <DownloadSimple size={20} weight="bold" />
-                    Download Report
+                    <ArrowSquareOut size={20} />
+                    Open PBI Report
                   </Button>
                   <Button
                     variant="outline"
                     size="lg"
-                    onClick={handleOpenInPowerBI}
+                    onClick={handleDownloadReport}
                     className="gap-2 flex-1"
                   >
-                    <ArrowSquareOut size={20} />
-                    Open in Power BI
+                    <DownloadSimple size={20} weight="bold" />
+                    Download
                   </Button>
                 </div>
 

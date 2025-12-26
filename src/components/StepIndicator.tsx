@@ -36,27 +36,27 @@ export function StepIndicator({ currentStep, onStepClick }: StepIndicatorProps) 
             >
               <div
                 className={cn(
-                  'w-12 h-12 rounded-full flex items-center justify-center border-2 transition-all duration-200',
+                  'w-14 h-14 rounded-full flex items-center justify-center transition-all duration-200 bg-white',
                   isStepComplete(index) &&
-                    'bg-accent border-accent text-accent-foreground',
+                    'shadow-md',
                   isStepCurrent(index) &&
-                    'bg-primary border-primary text-primary-foreground scale-110 shadow-lg',
-                  !isStepComplete(index) &&
-                    !isStepCurrent(index) &&
-                    'bg-white border-border text-muted-foreground'
+                    'shadow-lg scale-110'
                 )}
               >
                 {isStepComplete(index) ? (
-                  <CheckCircle size={24} weight="fill" className="text-green-500" />
+                  <CheckCircle size={32} weight="fill" className="text-green-500" />
                 ) : (
-                  <span className="font-semibold">{step.number}</span>
+                  <span className={cn(
+                    "font-semibold text-lg",
+                    isStepCurrent(index) ? "text-primary" : "text-muted-foreground"
+                  )}>{step.number}</span>
                 )}
               </div>
               <span
                 className={cn(
                   'text-sm font-medium text-center whitespace-nowrap transition-colors',
                   isStepCurrent(index) && 'text-primary',
-                  isStepComplete(index) && 'text-accent',
+                  isStepComplete(index) && 'text-green-600',
                   !isStepComplete(index) &&
                     !isStepCurrent(index) &&
                     'text-muted-foreground'
@@ -70,7 +70,7 @@ export function StepIndicator({ currentStep, onStepClick }: StepIndicatorProps) 
               <div className="flex-1 h-0.5 mx-4 bg-border relative">
                 <div
                   className={cn(
-                    'absolute inset-0 bg-accent transition-all duration-300',
+                    'absolute inset-0 bg-green-500 transition-all duration-300',
                     isStepComplete(index) ? 'w-full' : 'w-0'
                   )}
                 />
