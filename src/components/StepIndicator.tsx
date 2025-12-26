@@ -9,9 +9,10 @@ interface StepIndicatorProps {
 
 const steps: { id: WorkflowStep; label: string; number: number }[] = [
   { id: 'upload', label: 'Upload Model', number: 1 },
-  { id: 'theme', label: 'Select Theme', number: 2 },
-  { id: 'generate', label: 'Generate Report', number: 3 },
-  { id: 'complete', label: 'Download', number: 4 },
+  { id: 'requirements', label: 'Requirements', number: 2 },
+  { id: 'theme', label: 'Select Theme', number: 3 },
+  { id: 'generate', label: 'Generate Report', number: 4 },
+  { id: 'complete', label: 'Download', number: 5 },
 ];
 
 export function StepIndicator({ currentStep, onStepClick }: StepIndicatorProps) {

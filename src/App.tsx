@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useKV } from '@github/spark/hooks';
-import { PowerBITheme, WorkflowStep, ProgressStep, SemanticModel } from '@/lib/types';
+import { PowerBITheme, WorkflowStep, ProgressStep, SemanticModel, ReportRequirements } from '@/lib/types';
 import { DEFAULT_THEME } from '@/lib/themes';
 import { FileUploadZone } from '@/components/FileUploadZone';
 import { ThemeSelector } from '@/components/ThemeSelector';
 import { ProgressStream } from '@/components/ProgressStream';
 import { StepIndicator } from '@/components/StepIndicator';
 import { ThemeCustomizer } from '@/components/ThemeCustomizer';
+import { ReportRequirementsForm } from '@/components/ReportRequirementsForm';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { toast } from 'sonner';
@@ -16,6 +17,7 @@ function App() {
   const [currentStep, setCurrentStep] = useState<WorkflowStep>('upload');
   const [theme, setTheme] = useKV<PowerBITheme>('powerbi-theme', DEFAULT_THEME);
   const [semanticModel, setSemanticModel] = useState<SemanticModel | null>(null);
+  const [reportRequirements, setReportRequirements] = useKV<ReportRequirements | null>('report-requirements', null);
   const [isGenerating, setIsGenerating] = useState(false);
   const [progressSteps, setProgressSteps] = useState<ProgressStep[]>([]);
   const [generatedReport, setGeneratedReport] = useState<Blob | null>(null);
@@ -44,6 +46,12 @@ function App() {
     setShowThemeCustomizer(false);
   };
 
+  const handleRequirementsSave = (requirements: ReportRequirements) => {
+    setReportRequirements(() => requirements);
+    toast.success('Requirements saved!');
+    setCurrentStep('theme');
+  };
+
   const addProgressStep = (message: string, status: ProgressStep['status'] = 'in-progress') => {
     const step: ProgressStep = {
       id: Date.now().toString() + Math.random(),
@@ -68,6 +76,7 @@ function App() {
     const steps = [
       { message: 'Initializing AI agent...', delay: 800 },
       { message: 'Analyzing semantic model structure...', delay: 1500 },
+      { message: 'Processing report requirements...', delay: 1200 },
       { message: 'Identifying key measures and dimensions...', delay: 1200 },
       { message: 'Determining optimal visualizations...', delay: 1800 },
       { message: 'Creating report layout...', delay: 1000 },
@@ -156,14 +165,33 @@ function App() {
                 <div className="flex justify-end">
                   <Button
                     size="lg"
-                    onClick={() => setCurrentStep('theme')}
+                    onClick={() => setCurrentStep('requirements')}
                     className="gap-2"
                   >
-                    Continue to Theme Selection
+                    Continue to Requirements
                     <ArrowRight size={20} />
                   </Button>
                 </div>
               )}
+            </div>
+          )}
+
+          {currentStep === 'requirements' && (
+            <div className="max-w-3xl mx-auto space-y-6">
+              <ReportRequirementsForm
+                initialRequirements={reportRequirements ?? undefined}
+                onSave={handleRequirementsSave}
+              />
+              
+              <div className="flex justify-start">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  onClick={() => setCurrentStep('upload')}
+                >
+                  Back to Upload
+                </Button>
+              </div>
             </div>
           )}
 
@@ -178,9 +206,9 @@ function App() {
                 <Button
                   variant="outline"
                   size="lg"
-                  onClick={() => setCurrentStep('upload')}
+                  onClick={() => setCurrentStep('requirements')}
                 >
-                  Back to Upload
+                  Back to Requirements
                 </Button>
                 <Button
                   size="lg"
@@ -214,6 +242,20 @@ function App() {
                         {((semanticModel?.size ?? 0) / 1024).toFixed(2)} KB
                       </p>
                     </div>
+                    {reportRequirements && (
+                      <>
+                        <div>
+                          <p className="text-sm text-muted-foreground mb-1">Requirements</p>
+                          <p className="text-sm line-clamp-2">{reportRequirements.description}</p>
+                        </div>
+                        {reportRequirements.visualizations.length > 0 && (
+                          <div>
+                            <p className="text-sm text-muted-foreground mb-1">Visualizations</p>
+                            <p className="text-sm">{reportRequirements.visualizations.slice(0, 3).join(', ')}{reportRequirements.visualizations.length > 3 ? '...' : ''}</p>
+                          </div>
+                        )}
+                      </>
+                    )}
                   </div>
                 </Card>
 
@@ -301,6 +343,7 @@ function App() {
                     onClick={() => {
                       setCurrentStep('upload');
                       setSemanticModel(null);
+                      setReportRequirements(() => null);
                       setProgressSteps([]);
                       setGeneratedReport(null);
                     }}

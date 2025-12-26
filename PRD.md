@@ -16,22 +16,29 @@ This app orchestrates semantic model uploads, custom theme generation, AI-powere
 - **Functionality**: Drag-and-drop or click-to-browse file upload for Power BI semantic model folders (containing .bim or dataset files)
 - **Purpose**: Provides the data structure foundation for AI-powered report generation
 - **Trigger**: User drags folder to drop zone or clicks browse button
-- **Progression**: Select folder → Files validate → Upload progress indicator → Model parsed → Ready state confirmed → User proceeds to theme selection
+- **Progression**: Select folder → Files validate → Upload progress indicator → Model parsed → Ready state confirmed → User proceeds to requirements input
 - **Success criteria**: Successfully accepts semantic model folders, validates structure, provides clear feedback on upload status and any issues
+
+### Report Requirements Input
+- **Functionality**: Guided form for users to describe desired report content, visualizations, key metrics, and additional instructions
+- **Purpose**: Captures user intent and requirements to guide AI report generation for more relevant and targeted results
+- **Trigger**: User completes semantic model upload and proceeds to requirements step
+- **Progression**: Enter report description → Add desired visualizations (with suggestions) → Specify key metrics → Optional custom instructions → Save requirements → Proceed to theme selection
+- **Success criteria**: Form validates required fields, provides helpful suggestions, persists requirements for display in generation summary, allows editing before generation
 
 ### Custom Theme Selection
 - **Functionality**: Access to the full theme generator with presets, customization, and live preview
 - **Purpose**: Allows users to apply branded, professional themes to generated reports
-- **Trigger**: User navigates to theme step or clicks "Choose Theme" button
+- **Trigger**: User navigates to theme step after specifying requirements
 - **Progression**: Browse preset themes → Filter/search options → Preview theme → Customize if needed → Select theme → Theme applied to generation workflow
 - **Success criteria**: All existing theme functionality works seamlessly, selected theme persists and applies to generated report
 
 ### AI Report Generation
-- **Functionality**: AI agent analyzes semantic model and generates comprehensive Power BI report with multiple visualizations
-- **Purpose**: Automatically creates professional, insight-rich reports without manual design work
-- **Trigger**: User clicks "Generate Report" button after uploading model and selecting theme
-- **Progression**: Click generate → Agent initializes → Progress stream begins → Agent analyzes model → Creates visualizations → Applies theme → Finalizes report → Download ready
-- **Success criteria**: Agent successfully generates valid Power BI report file, process completes within reasonable time, result matches theme and model structure
+- **Functionality**: AI agent analyzes semantic model, user requirements, and generates comprehensive Power BI report with multiple visualizations
+- **Purpose**: Automatically creates professional, insight-rich reports based on user specifications without manual design work
+- **Trigger**: User clicks "Generate Report" button after uploading model, specifying requirements, and selecting theme
+- **Progression**: Click generate → Agent initializes → Progress stream begins → Agent analyzes model → Processes requirements → Creates visualizations → Applies theme → Finalizes report → Download ready
+- **Success criteria**: Agent successfully generates valid Power BI report file that aligns with user requirements, process completes within reasonable time, result matches theme and model structure
 
 ### Real-time Progress Display
 - **Functionality**: Live streaming updates showing agent's current task, step-by-step progress with status indicators
@@ -56,6 +63,7 @@ This app orchestrates semantic model uploads, custom theme generation, AI-powere
 
 ## Edge Case Handling
 - **Invalid Model Files** - Detect and provide clear error messages for unsupported or corrupted semantic model files
+- **Empty Requirements** - Allow proceeding with minimal requirements but suggest adding details for better results
 - **Large File Uploads** - Handle large semantic models with chunked upload progress and validation
 - **Generation Failures** - Gracefully handle AI generation errors with retry options and helpful troubleshooting
 - **Network Interruptions** - Persist progress state and allow resumption if connection drops during generation
@@ -93,19 +101,21 @@ Animations should feel precise and responsive, reinforcing the professional tool
 
 ## Component Selection
 - **Components**:
-  - `Card` - Semantic model upload area, theme selector, progress panel with elevated styling
+  - `Card` - Semantic model upload area, requirements form, theme selector, progress panel with elevated styling
   - `Button` - Primary (generate, download), secondary (choose theme, open PBI), and outline variants
-  - `Input` - File path display and theme name with validation
+  - `Input` - File path display, visualization and metric inputs, theme name with validation
+  - `Textarea` - Report description and custom instructions with character guidance
   - `Label` - Step identifiers and field labels with clear hierarchy
-  - `Tabs` - Organize generation workflow steps (upload, theme, generate)
+  - `Badge` - Visualization and metric tags, status indicators (uploading, analyzing, generating, complete)
+  - `Tabs` - Organize generation workflow steps (upload, requirements, theme, generate)
   - `Dialog` - Theme preset selection gallery
   - `Progress` - Visual progress bar for file upload and generation stages
-  - `Badge` - Status indicators (uploading, analyzing, generating, complete)
-  - `ScrollArea` - Progress log viewer and theme preview
+  - `ScrollArea` - Progress log viewer, theme preview, and requirements summary
   - `Separator` - Visual breaks between workflow sections
   
 - **Customizations**:
   - **FileUploadZone Component** - Custom drag-and-drop area with visual feedback for hover/drop states
+  - **ReportRequirementsForm Component** - Guided form with suggestion chips for visualizations and metrics
   - **ProgressStream Component** - Real-time log display with auto-scroll and status icons
   - **GenerationStatus Component** - Multi-stage progress indicator with current step highlighting
   - **ThemeSelector Component** - Compact theme preview with quick access to full customization
@@ -113,11 +123,15 @@ Animations should feel precise and responsive, reinforcing the professional tool
 - **States**:
   - Buttons: Hover elevates with shadow; active scales slightly; disabled shows opacity 50% with cursor not-allowed; loading shows spinner
   - Upload zone: Hover shows border pulse; drag-over shows highlighted border and background; uploading shows progress overlay
+  - Requirements form: Input focus shows accent border; suggestion chips highlight on hover; selected items show as dismissible badges
   - Progress items: In-progress shows animated spinner; complete shows green check; error shows red warning icon
   - Steps: Active step has primary color; completed steps show check; upcoming steps are muted
   
 - **Icon Selection**:
   - Upload - `UploadSimple` or `CloudArrowUp`
+  - Requirements - `Lightbulb` or `ListChecks`
+  - Add item - `Plus`
+  - Remove item - `X`
   - Generate - `Sparkle` or `MagicWand`
   - Download - `DownloadSimple`
   - Open - `ArrowSquareOut` or `WindowsLogo`
@@ -130,6 +144,8 @@ Animations should feel precise and responsive, reinforcing the professional tool
   - Page padding: `p-6` on mobile, `p-10` on desktop
   - Card padding: `p-8` for main areas, `p-6` for compact sections
   - Upload zone padding: `p-12` to create generous target area
+  - Requirements form spacing: `gap-6` between sections, `gap-2` for form fields
+  - Badge clusters: `gap-2` between items
   - Progress log gap: `gap-3` between log entries
   - Step indicator gap: `gap-8` between steps
   - Action button gap: `gap-4`
@@ -137,6 +153,9 @@ Animations should feel precise and responsive, reinforcing the professional tool
 - **Mobile**:
   - Workflow switches from horizontal steps to vertical on mobile
   - Upload zone reduces padding but maintains min-height of 200px
+  - Requirements form inputs stack with full width
+  - Suggestion chips wrap gracefully with smaller text
+  - Badge clusters wrap to multiple lines
   - Progress panel becomes full-width below main content
   - Action buttons stack vertically with full width
   - Theme selector shows compact grid with 2 columns vs 4 on desktop

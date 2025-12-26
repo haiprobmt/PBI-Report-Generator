@@ -44,4 +44,11 @@ export interface GenerationResult {
   theme: PowerBITheme;
 }
 
-export type WorkflowStep = 'upload' | 'theme' | 'generate' | 'complete';
+export type WorkflowStep = 'upload' | 'requirements' | 'theme' | 'generate' | 'complete';
+
+export interface ReportRequirements {
+  description: string;
+  visualizations: string[];
+  keyMetrics: string[];
+  customInstructions?: string;
+}
