@@ -8,6 +8,7 @@ import { ProgressStream } from '@/components/ProgressStream';
 import { StepIndicator } from '@/components/StepIndicator';
 import { ThemeCustomizer } from '@/components/ThemeCustomizer';
 import { ReportRequirementsForm } from '@/components/ReportRequirementsForm';
+import { ReportPreviewLayout } from '@/components/ReportPreviewLayout';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { toast } from 'sonner';
@@ -196,13 +197,24 @@ function App() {
           )}
 
           {currentStep === 'theme' && (
-            <div className="max-w-3xl mx-auto space-y-6">
-              <ThemeSelector
-                selectedTheme={currentTheme}
-                onCustomize={() => setShowThemeCustomizer(true)}
-              />
+            <div className="max-w-7xl mx-auto space-y-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="space-y-6">
+                  <ThemeSelector
+                    selectedTheme={currentTheme}
+                    onCustomize={() => setShowThemeCustomizer(true)}
+                  />
+                </div>
+                
+                <div className="space-y-6">
+                  <ReportPreviewLayout 
+                    theme={currentTheme}
+                    requirements={reportRequirements ?? null}
+                  />
+                </div>
+              </div>
               
-              <div className="flex justify-between">
+              <div className="flex justify-between max-w-7xl mx-auto">
                 <Button
                   variant="outline"
                   size="lg"
