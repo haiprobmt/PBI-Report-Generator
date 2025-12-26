@@ -21,21 +21,21 @@ function App() {
   const [theme, setTheme] = useKV<PowerBITheme>('powerbi-theme', DEFAULT_THEME);
   const [presetDialogOpen, setPresetDialogOpen] = useState(false);
 
-  const currentTheme = theme || DEFAULT_THEME;
+  const currentTheme: PowerBITheme = theme ?? DEFAULT_THEME;
 
   const updateThemeField = <K extends keyof PowerBITheme>(
     field: K,
     value: PowerBITheme[K]
   ) => {
     setTheme((current) => ({
-      ...(current || DEFAULT_THEME),
+      ...(current ?? DEFAULT_THEME),
       [field]: value,
     }));
   };
 
   const updateDataColor = (index: number, color: string) => {
     setTheme((current) => {
-      const base = current || DEFAULT_THEME;
+      const base = current ?? DEFAULT_THEME;
       const newDataColors = [...base.dataColors];
       newDataColors[index] = color;
       return { ...base, dataColors: newDataColors };
@@ -44,7 +44,7 @@ function App() {
 
   const addDataColor = () => {
     setTheme((current) => {
-      const base = current || DEFAULT_THEME;
+      const base = current ?? DEFAULT_THEME;
       return {
         ...base,
         dataColors: [...base.dataColors, '#118DFF'],
@@ -55,7 +55,7 @@ function App() {
 
   const removeDataColor = (index: number) => {
     setTheme((current) => {
-      const base = current || DEFAULT_THEME;
+      const base = current ?? DEFAULT_THEME;
       return {
         ...base,
         dataColors: base.dataColors.filter((_, i) => i !== index),
@@ -178,19 +178,19 @@ function App() {
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <ColorPicker
                           label="Background"
-                          value={currentTheme.background || '#FFFFFF'}
+                          value={currentTheme.background ?? '#FFFFFF'}
                           onChange={(value) => updateThemeField('background', value)}
                           description="Report background color"
                         />
                         <ColorPicker
                           label="Foreground"
-                          value={currentTheme.foreground || '#000000'}
+                          value={currentTheme.foreground ?? '#000000'}
                           onChange={(value) => updateThemeField('foreground', value)}
                           description="Primary text color"
                         />
                         <ColorPicker
                           label="Table Accent"
-                          value={currentTheme.tableAccent || '#118DFF'}
+                          value={currentTheme.tableAccent ?? '#118DFF'}
                           onChange={(value) => updateThemeField('tableAccent', value)}
                           description="Table header highlight"
                         />
@@ -247,43 +247,43 @@ function App() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <ColorPicker
                         label="Good"
-                        value={currentTheme.good || '#00B050'}
+                        value={currentTheme.good ?? '#00B050'}
                         onChange={(value) => updateThemeField('good', value)}
                         description="Positive metrics"
                       />
                       <ColorPicker
                         label="Neutral"
-                        value={currentTheme.neutral || '#FFC000'}
+                        value={currentTheme.neutral ?? '#FFC000'}
                         onChange={(value) => updateThemeField('neutral', value)}
                         description="Neutral metrics"
                       />
                       <ColorPicker
                         label="Bad"
-                        value={currentTheme.bad || '#FF0000'}
+                        value={currentTheme.bad ?? '#FF0000'}
                         onChange={(value) => updateThemeField('bad', value)}
                         description="Negative metrics"
                       />
                       <ColorPicker
                         label="Maximum"
-                        value={currentTheme.maximum || '#118DFF'}
+                        value={currentTheme.maximum ?? '#118DFF'}
                         onChange={(value) => updateThemeField('maximum', value)}
                         description="Maximum value in range"
                       />
                       <ColorPicker
                         label="Center"
-                        value={currentTheme.center || '#FFC000'}
+                        value={currentTheme.center ?? '#FFC000'}
                         onChange={(value) => updateThemeField('center', value)}
                         description="Center value in range"
                       />
                       <ColorPicker
                         label="Minimum"
-                        value={currentTheme.minimum || '#DEEFFF'}
+                        value={currentTheme.minimum ?? '#DEEFFF'}
                         onChange={(value) => updateThemeField('minimum', value)}
                         description="Minimum value in range"
                       />
                       <ColorPicker
                         label="Null"
-                        value={currentTheme.null || '#FF7F48'}
+                        value={currentTheme.null ?? '#FF7F48'}
                         onChange={(value) => updateThemeField('null', value)}
                         description="Null or missing data"
                       />

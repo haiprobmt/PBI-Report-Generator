@@ -7,11 +7,17 @@ interface ThemePreviewProps {
 
 export function ThemePreview({ theme }: ThemePreviewProps) {
   const dataColors = theme.dataColors.slice(0, 8);
+  const background = theme.background ?? '#FFFFFF';
+  const foreground = theme.foreground ?? '#000000';
+  const tableAccent = theme.tableAccent ?? '#118DFF';
+  const good = theme.good ?? '#00B050';
+  const neutral = theme.neutral ?? '#FFC000';
+  const bad = theme.bad ?? '#FF0000';
 
   return (
-    <Card className="p-6 space-y-6" style={{ backgroundColor: theme.background, color: theme.foreground }}>
+    <Card className="p-6 space-y-6" style={{ backgroundColor: background, color: foreground }}>
       <div>
-        <h3 className="text-lg font-semibold mb-4" style={{ color: theme.foreground }}>
+        <h3 className="text-lg font-semibold mb-4" style={{ color: foreground }}>
           Live Preview
         </h3>
         <p className="text-sm text-muted-foreground mb-6">
@@ -21,7 +27,7 @@ export function ThemePreview({ theme }: ThemePreviewProps) {
 
       <div className="space-y-6">
         <div>
-          <p className="text-xs font-medium mb-3" style={{ color: theme.foreground }}>
+          <p className="text-xs font-medium mb-3" style={{ color: foreground }}>
             Data Colors
           </p>
           <div className="flex gap-2 flex-wrap">
@@ -37,7 +43,7 @@ export function ThemePreview({ theme }: ThemePreviewProps) {
         </div>
 
         <div>
-          <p className="text-xs font-medium mb-3" style={{ color: theme.foreground }}>
+          <p className="text-xs font-medium mb-3" style={{ color: foreground }}>
             Bar Chart Preview
           </p>
           <div className="flex items-end gap-2 h-40 p-4 bg-card rounded-lg border border-border">
@@ -58,7 +64,7 @@ export function ThemePreview({ theme }: ThemePreviewProps) {
         </div>
 
         <div>
-          <p className="text-xs font-medium mb-3" style={{ color: theme.foreground }}>
+          <p className="text-xs font-medium mb-3" style={{ color: foreground }}>
             Donut Chart Preview
           </p>
           <div className="flex justify-center p-4 bg-card rounded-lg border border-border">
@@ -111,31 +117,31 @@ export function ThemePreview({ theme }: ThemePreviewProps) {
         </div>
 
         <div>
-          <p className="text-xs font-medium mb-3" style={{ color: theme.foreground }}>
+          <p className="text-xs font-medium mb-3" style={{ color: foreground }}>
             KPI Cards
           </p>
           <div className="grid grid-cols-3 gap-3">
             <div className="p-4 bg-card rounded-lg border border-border text-center transition-all hover:shadow-md">
-              <div className="text-2xl font-bold" style={{ color: theme.good }}>
+              <div className="text-2xl font-bold" style={{ color: good }}>
                 ↑ 24%
               </div>
-              <div className="text-xs mt-1" style={{ color: theme.foreground, opacity: 0.6 }}>
+              <div className="text-xs mt-1" style={{ color: foreground, opacity: 0.6 }}>
                 Good
               </div>
             </div>
             <div className="p-4 bg-card rounded-lg border border-border text-center transition-all hover:shadow-md">
-              <div className="text-2xl font-bold" style={{ color: theme.neutral }}>
+              <div className="text-2xl font-bold" style={{ color: neutral }}>
                 → 5%
               </div>
-              <div className="text-xs mt-1" style={{ color: theme.foreground, opacity: 0.6 }}>
+              <div className="text-xs mt-1" style={{ color: foreground, opacity: 0.6 }}>
                 Neutral
               </div>
             </div>
             <div className="p-4 bg-card rounded-lg border border-border text-center transition-all hover:shadow-md">
-              <div className="text-2xl font-bold" style={{ color: theme.bad }}>
+              <div className="text-2xl font-bold" style={{ color: bad }}>
                 ↓ 12%
               </div>
-              <div className="text-xs mt-1" style={{ color: theme.foreground, opacity: 0.6 }}>
+              <div className="text-xs mt-1" style={{ color: foreground, opacity: 0.6 }}>
                 Bad
               </div>
             </div>
@@ -143,17 +149,17 @@ export function ThemePreview({ theme }: ThemePreviewProps) {
         </div>
 
         <div>
-          <p className="text-xs font-medium mb-3" style={{ color: theme.foreground }}>
+          <p className="text-xs font-medium mb-3" style={{ color: foreground }}>
             Table Accent
           </p>
           <div className="rounded-lg border border-border overflow-hidden">
-            <div className="h-2 transition-colors" style={{ backgroundColor: theme.tableAccent }} />
+            <div className="h-2 transition-colors" style={{ backgroundColor: tableAccent }} />
             <div className="p-4 bg-card space-y-2">
               {[1, 2, 3].map((i) => (
                 <div
                   key={i}
                   className="h-8 rounded"
-                  style={{ backgroundColor: theme.background }}
+                  style={{ backgroundColor: background }}
                 />
               ))}
             </div>
