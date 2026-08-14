@@ -1,0 +1,472 @@
+{
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\components.json": {
+    "mtime": 1766805496.0,
+    "ast_hash": "b825a3b31aa7b8caf4f642f0ff26c34a",
+    "semantic_hash": "b825a3b31aa7b8caf4f642f0ff26c34a"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\package.json": {
+    "mtime": 1773498132.7969244,
+    "ast_hash": "bed20b9352ffda4d62fdfe358e97f13c",
+    "semantic_hash": "bed20b9352ffda4d62fdfe358e97f13c"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\runtime.config.json": {
+    "mtime": 1766805496.0,
+    "ast_hash": "1723c7a4c81ee88f58f3d14b2edfc302",
+    "semantic_hash": "1723c7a4c81ee88f58f3d14b2edfc302"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\spark.meta.json": {
+    "mtime": 1766805496.0,
+    "ast_hash": "3f0afffac2c8757ed7f6532aad864beb",
+    "semantic_hash": "3f0afffac2c8757ed7f6532aad864beb"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\App.tsx": {
+    "mtime": 1773509482.1374319,
+    "ast_hash": "341348de9c8406800d658c61e5086369",
+    "semantic_hash": "341348de9c8406800d658c61e5086369"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\ErrorFallback.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "54a8710f9187eb9fb0f56c5a6fa9845d",
+    "semantic_hash": "54a8710f9187eb9fb0f56c5a6fa9845d"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\AIChatRequirements.tsx": {
+    "mtime": 1773497814.0963268,
+    "ast_hash": "7e508fd06dd81984c0d82e911897f3fc",
+    "semantic_hash": "7e508fd06dd81984c0d82e911897f3fc"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ColorPicker.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "fbb563172f6e07d0eb9c132dfcee24cd",
+    "semantic_hash": "fbb563172f6e07d0eb9c132dfcee24cd"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ConfigurationSpecViewer.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "b4a751bc52dd882536c76f4e32d8db62",
+    "semantic_hash": "b4a751bc52dd882536c76f4e32d8db62"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\DraggableLayoutEditor.tsx": {
+    "mtime": 1766992440.0,
+    "ast_hash": "29986447d80114eb41d8c8e574ebc065",
+    "semantic_hash": "29986447d80114eb41d8c8e574ebc065"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\FileUploadZone.tsx": {
+    "mtime": 1773496678.0940733,
+    "ast_hash": "cdade1a40be56bdfdbc0110f11e6100a",
+    "semantic_hash": "cdade1a40be56bdfdbc0110f11e6100a"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\LayoutCard.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "d139cfa79f78af20f50a715ddd57d842",
+    "semantic_hash": "d139cfa79f78af20f50a715ddd57d842"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\LayoutExportPreview.tsx": {
+    "mtime": 1773497165.809437,
+    "ast_hash": "cfc15ea4d9e9e264142abc6796bc4314",
+    "semantic_hash": "cfc15ea4d9e9e264142abc6796bc4314"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\LayoutPreview.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "a55d4297a6812d47f948e8d517bc4237",
+    "semantic_hash": "a55d4297a6812d47f948e8d517bc4237"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\PresetCard.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "6ffa60d73ad4f95cb086de12717587bf",
+    "semantic_hash": "6ffa60d73ad4f95cb086de12717587bf"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ProgressStream.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "2fd52519b79f4594e047e5a22cc8e412",
+    "semantic_hash": "2fd52519b79f4594e047e5a22cc8e412"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ReportBuildingAnimation.tsx": {
+    "mtime": 1766993900.0,
+    "ast_hash": "1b77572245b66ec68cb09d6513046c74",
+    "semantic_hash": "1b77572245b66ec68cb09d6513046c74"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ReportPreview.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "43955813fc1c626167cd56a4e6d5d379",
+    "semantic_hash": "43955813fc1c626167cd56a4e6d5d379"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ReportPreviewLayout.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "024b8815553f604462f5cc569862976c",
+    "semantic_hash": "024b8815553f604462f5cc569862976c"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ReportRequirementsForm.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "d4fd10c3d1c773e068a16a357b71590c",
+    "semantic_hash": "d4fd10c3d1c773e068a16a357b71590c"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\RequirementsPreview.tsx": {
+    "mtime": 1766992440.0,
+    "ast_hash": "404dedeb1d6e744441f719c8a6998fb0",
+    "semantic_hash": "404dedeb1d6e744441f719c8a6998fb0"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\SlicerPlacementCustomizer.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "613fa13c5a369d7efe6e9abd930a3e85",
+    "semantic_hash": "613fa13c5a369d7efe6e9abd930a3e85"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\StepIndicator.tsx": {
+    "mtime": 1773509482.1374319,
+    "ast_hash": "e089892246865f0653d9529fb83726f8",
+    "semantic_hash": "e089892246865f0653d9529fb83726f8"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\TemplateLayoutSelector.tsx": {
+    "mtime": 1766992440.0,
+    "ast_hash": "a8dd086f7e4858b1d57a8a973ffce0bb",
+    "semantic_hash": "a8dd086f7e4858b1d57a8a973ffce0bb"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ThemeCustomizer.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "d920c2ea5b759db27cb668fceeb401fb",
+    "semantic_hash": "d920c2ea5b759db27cb668fceeb401fb"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ThemePreview.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "66808afdc70900e01afc628a72350220",
+    "semantic_hash": "66808afdc70900e01afc628a72350220"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ThemeSelector.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "fc55e36009772cd4b976556cc1981a15",
+    "semantic_hash": "fc55e36009772cd4b976556cc1981a15"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\accordion.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "bcd05568dad3890f9eabc54046e3e193",
+    "semantic_hash": "bcd05568dad3890f9eabc54046e3e193"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\alert-dialog.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "a1d582092e061d68ba48091ffeed89cb",
+    "semantic_hash": "a1d582092e061d68ba48091ffeed89cb"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\alert.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "399a87d86e96e56fe1880466113ed2c4",
+    "semantic_hash": "399a87d86e96e56fe1880466113ed2c4"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\aspect-ratio.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "7fcb9fc4de48902cfe208c7889922adb",
+    "semantic_hash": "7fcb9fc4de48902cfe208c7889922adb"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\avatar.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "6e50576c6f3310c672bd7c100b0b8f73",
+    "semantic_hash": "6e50576c6f3310c672bd7c100b0b8f73"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\badge.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "05f8d8d07673e2649a50438999cd78c4",
+    "semantic_hash": "05f8d8d07673e2649a50438999cd78c4"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\breadcrumb.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "d77e8f9de41d851c36ca250809400c7d",
+    "semantic_hash": "d77e8f9de41d851c36ca250809400c7d"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\button.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "7daecdd8108d6ef5437dafc05abf3742",
+    "semantic_hash": "7daecdd8108d6ef5437dafc05abf3742"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\calendar.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "23e9678fcd8cbd45a192bf4bbd7c39e2",
+    "semantic_hash": "23e9678fcd8cbd45a192bf4bbd7c39e2"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\card.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "cb30c82359d322183ff25da0193d7608",
+    "semantic_hash": "cb30c82359d322183ff25da0193d7608"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\carousel.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "cdefd304b5c8fe408e2128ad4ede70af",
+    "semantic_hash": "cdefd304b5c8fe408e2128ad4ede70af"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\chart.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "08810f635878380c50ff499f2cddb043",
+    "semantic_hash": "08810f635878380c50ff499f2cddb043"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\checkbox.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "5ef1afbb741c8233cdafd1e93d6c0184",
+    "semantic_hash": "5ef1afbb741c8233cdafd1e93d6c0184"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\collapsible.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "6a683b0bdf826c730eff573afb605899",
+    "semantic_hash": "6a683b0bdf826c730eff573afb605899"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\command.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "e85ebf79653cf0315d03efed698fea0b",
+    "semantic_hash": "e85ebf79653cf0315d03efed698fea0b"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\context-menu.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "b5d3c661d30fed56cc8c33f414bbe3db",
+    "semantic_hash": "b5d3c661d30fed56cc8c33f414bbe3db"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\dialog.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "1545234c428a6842ad7071b4cad2a239",
+    "semantic_hash": "1545234c428a6842ad7071b4cad2a239"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\drawer.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "8cb09549ff8eec68955aea6f60716161",
+    "semantic_hash": "8cb09549ff8eec68955aea6f60716161"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\dropdown-menu.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "d3cbec2e2d355148effc9c6258395359",
+    "semantic_hash": "d3cbec2e2d355148effc9c6258395359"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\form.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "f7848dcfba59f5389a5e9eabc870bfa0",
+    "semantic_hash": "f7848dcfba59f5389a5e9eabc870bfa0"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\hover-card.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "f7aba318e660e2ec22ecacf9132c09de",
+    "semantic_hash": "f7aba318e660e2ec22ecacf9132c09de"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\input-otp.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "5637b5f556d55ade015bd50878d81d8d",
+    "semantic_hash": "5637b5f556d55ade015bd50878d81d8d"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\input.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "52c1a669a7a1e231ad64b52d13068428",
+    "semantic_hash": "52c1a669a7a1e231ad64b52d13068428"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\label.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "ec7ba8ca5f3865c8093432d882974d22",
+    "semantic_hash": "ec7ba8ca5f3865c8093432d882974d22"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\menubar.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "bbe5c8fea92e3128ce2c850c1d087969",
+    "semantic_hash": "bbe5c8fea92e3128ce2c850c1d087969"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\navigation-menu.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "23ed039223d1fcfff64dc53e6544f898",
+    "semantic_hash": "23ed039223d1fcfff64dc53e6544f898"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\pagination.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "ce7463142275d7689048a5ab0febeee2",
+    "semantic_hash": "ce7463142275d7689048a5ab0febeee2"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\popover.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "a5272a50824ccb2f83c0acf33c94ce08",
+    "semantic_hash": "a5272a50824ccb2f83c0acf33c94ce08"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\progress.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "892e479eaaebdff556e71e4397c6868a",
+    "semantic_hash": "892e479eaaebdff556e71e4397c6868a"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\radio-group.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "3de2e124cd30932ac31b854a93b0404f",
+    "semantic_hash": "3de2e124cd30932ac31b854a93b0404f"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\resizable.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "eb1bdb4e4ba77019cbdaa0bd03ac53fc",
+    "semantic_hash": "eb1bdb4e4ba77019cbdaa0bd03ac53fc"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\scroll-area.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "afe676a3e9231452fed8e285916b840f",
+    "semantic_hash": "afe676a3e9231452fed8e285916b840f"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\select.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "5e36d89bb3310b0315af1b6d21ccfaf2",
+    "semantic_hash": "5e36d89bb3310b0315af1b6d21ccfaf2"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\separator.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "3fe2d9fedf2049c56fdd6f23ad7e049c",
+    "semantic_hash": "3fe2d9fedf2049c56fdd6f23ad7e049c"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\sheet.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "adcf8464077de53c503c1ee3ae8bb3f9",
+    "semantic_hash": "adcf8464077de53c503c1ee3ae8bb3f9"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\sidebar.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "1a60a0ed0f8460534e771da9d08fe6b0",
+    "semantic_hash": "1a60a0ed0f8460534e771da9d08fe6b0"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\skeleton.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "678791bdf35713023b6d2c7e2c569750",
+    "semantic_hash": "678791bdf35713023b6d2c7e2c569750"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\slider.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "06030fa4c2ae9a9bc779d499f96b755f",
+    "semantic_hash": "06030fa4c2ae9a9bc779d499f96b755f"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\sonner.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "88bdb8a24a92c848b5c35c0d023ebb6d",
+    "semantic_hash": "88bdb8a24a92c848b5c35c0d023ebb6d"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\switch.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "0ea7346da72d9bd4062cc6c140cc856e",
+    "semantic_hash": "0ea7346da72d9bd4062cc6c140cc856e"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\table.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "01b7ca87bd35e8bf4d125f543a685866",
+    "semantic_hash": "01b7ca87bd35e8bf4d125f543a685866"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\tabs.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "c65bfe2b9ae80a6c7a6a7fc336b0c2af",
+    "semantic_hash": "c65bfe2b9ae80a6c7a6a7fc336b0c2af"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\textarea.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "bb00704a2e1a49eb8e29ac8036cee9d8",
+    "semantic_hash": "bb00704a2e1a49eb8e29ac8036cee9d8"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\toggle-group.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "a64d88cc00c8336f8156058f53a0a73a",
+    "semantic_hash": "a64d88cc00c8336f8156058f53a0a73a"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\toggle.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "00114b5602827d6caed574ec2b0b44c7",
+    "semantic_hash": "00114b5602827d6caed574ec2b0b44c7"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\components\\ui\\tooltip.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "8df756781b841e97379e29a1a2adbdc3",
+    "semantic_hash": "8df756781b841e97379e29a1a2adbdc3"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\hooks\\use-mobile.ts": {
+    "mtime": 1766805496.0,
+    "ast_hash": "faf56f10f968ddde0d9c91d07e7428cf",
+    "semantic_hash": "faf56f10f968ddde0d9c91d07e7428cf"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\api.ts": {
+    "mtime": 1767003329.0,
+    "ast_hash": "a16c677775f89a25c0276f8df33fc95d",
+    "semantic_hash": "a16c677775f89a25c0276f8df33fc95d"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\azureOpenAI.ts": {
+    "mtime": 1766993059.0,
+    "ast_hash": "37e8275c05cfd2a2314910e5367382ba",
+    "semantic_hash": "37e8275c05cfd2a2314910e5367382ba"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\configGenerator.ts": {
+    "mtime": 1766805496.0,
+    "ast_hash": "1ed7f869e902aa97d1617cfb6a6cbc0d",
+    "semantic_hash": "1ed7f869e902aa97d1617cfb6a6cbc0d"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\layoutOptimizer.ts": {
+    "mtime": 1766992822.0,
+    "ast_hash": "b4fbd8abf78e1f1af1535bda9ed73a4a",
+    "semantic_hash": "b4fbd8abf78e1f1af1535bda9ed73a4a"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\themeUtils.ts": {
+    "mtime": 1766805496.0,
+    "ast_hash": "fe429d85cb622104b0ebe1ac3edb7405",
+    "semantic_hash": "fe429d85cb622104b0ebe1ac3edb7405"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\themes.ts": {
+    "mtime": 1766805496.0,
+    "ast_hash": "5a5756dc539537ceffe3a4154059f8c0",
+    "semantic_hash": "5a5756dc539537ceffe3a4154059f8c0"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\types.ts": {
+    "mtime": 1773509482.1374319,
+    "ast_hash": "3f013d09b6be562475dcc80f21593c3b",
+    "semantic_hash": "3f013d09b6be562475dcc80f21593c3b"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\lib\\utils.ts": {
+    "mtime": 1766805496.0,
+    "ast_hash": "1d8011eb18769078bf77502b220daa5e",
+    "semantic_hash": "1d8011eb18769078bf77502b220daa5e"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\main.tsx": {
+    "mtime": 1766805496.0,
+    "ast_hash": "22d1fb37f6da61f859709089a05756ee",
+    "semantic_hash": "22d1fb37f6da61f859709089a05756ee"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\src\\vite-end.d.ts": {
+    "mtime": 1766805496.0,
+    "ast_hash": "902829fbda985fd3f586d568be16efcf",
+    "semantic_hash": "902829fbda985fd3f586d568be16efcf"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\tailwind.config.js": {
+    "mtime": 1766805496.0,
+    "ast_hash": "588b9bda51ad710ff3348da516363a5c",
+    "semantic_hash": "588b9bda51ad710ff3348da516363a5c"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\theme.json": {
+    "mtime": 1766805496.0,
+    "ast_hash": "99914b932bd37a50b983c5e7c90ae93b",
+    "semantic_hash": "99914b932bd37a50b983c5e7c90ae93b"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\tsconfig.json": {
+    "mtime": 1766805496.0,
+    "ast_hash": "feecea7778a958f6a6842fd0fd108199",
+    "semantic_hash": "feecea7778a958f6a6842fd0fd108199"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\vite.config.ts": {
+    "mtime": 1766805496.0,
+    "ast_hash": "7bb98c6f258b8f66851b0cf40f03f95d",
+    "semantic_hash": "7bb98c6f258b8f66851b0cf40f03f95d"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\.github\\dependabot.yml": {
+    "mtime": 1766805496.0,
+    "ast_hash": "602ddf096003425fb894b3cc0427dbdc",
+    "semantic_hash": "602ddf096003425fb894b3cc0427dbdc"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\LAYOUT_EDITOR_IMPROVEMENTS.md": {
+    "mtime": 1766992440.0,
+    "ast_hash": "ef42675a8e0166073d4a18acd32d58ea",
+    "semantic_hash": "ef42675a8e0166073d4a18acd32d58ea"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\PRD.md": {
+    "mtime": 1766992440.0,
+    "ast_hash": "e9acc11aa6e214fd239f2dc837db4694",
+    "semantic_hash": "e9acc11aa6e214fd239f2dc837db4694"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\README.md": {
+    "mtime": 1786330547.399808,
+    "ast_hash": "72df2ff8775536ce74de5095440442d5",
+    "semantic_hash": "72df2ff8775536ce74de5095440442d5"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\SECURITY.md": {
+    "mtime": 1766805496.0,
+    "ast_hash": "520746c5ab7afb026f85cde09083d0aa",
+    "semantic_hash": "520746c5ab7afb026f85cde09083d0aa"
+  },
+  "C:\\Work\\Work\\Personal\\Power-BI\\PBI-Report-Generator\\frontend\\index.html": {
+    "mtime": 1766805496.0,
+    "ast_hash": "f54aac1dfb7b73d854c3dc3098ae304a",
+    "semantic_hash": "f54aac1dfb7b73d854c3dc3098ae304a"
+  }
+}

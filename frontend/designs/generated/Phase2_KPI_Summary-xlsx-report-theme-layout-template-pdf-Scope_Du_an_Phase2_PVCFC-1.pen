@@ -1,0 +1,2399 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "power-bi-report-page",
+      "x": 0,
+      "y": 0,
+      "name": "PVCFC Smart Factory · Tổng quan KPI Phase 2",
+      "context": "Trang Tổng quan Power BI 1280×720 cho 188 KPI thuộc BCBD, Chất lượng, HSE và Kho vận. Tất cả số liệu hiển thị là dữ liệu mẫu.",
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$page-bg",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "S0Ocb",
+          "x": 0,
+          "y": 0,
+          "name": "Sidebar navigation",
+          "width": 188,
+          "height": 720,
+          "fill": "$pvcfc-green-dark",
+          "layout": "none",
+          "children": [
+            {
+              "type": "frame",
+              "id": "PkRN1",
+              "x": 18,
+              "y": 18,
+              "name": "Brand lockup",
+              "width": 152,
+              "height": 42,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v7hCh",
+                  "x": 0,
+                  "y": 2,
+                  "name": "Brand symbol",
+                  "width": 38,
+                  "height": 38,
+                  "fill": "#FFFFFF",
+                  "cornerRadius": 10,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "icon",
+                      "id": "aJ81h",
+                      "x": 9,
+                      "y": 9,
+                      "name": "Leaf icon",
+                      "width": 20,
+                      "height": 20,
+                      "icon": "leaf",
+                      "library": "lucide",
+                      "fill": "$pvcfc-green"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "yJmc5",
+                  "x": 48,
+                  "y": 3,
+                  "name": "Brand title",
+                  "fill": "#FFFFFF",
+                  "content": "PVCFC",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 18,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "xEuA4",
+                  "x": 40,
+                  "y": 25,
+                  "name": "Brand subtitle",
+                  "fill": "#CFE7D8",
+                  "content": "SMART FACTORY",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 0.6
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "D14Wp",
+              "x": 20,
+              "y": 84,
+              "name": "Navigation label",
+              "fill": "#A9CEB8",
+              "content": "ĐIỀU HƯỚNG BÁO CÁO",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600",
+              "letterSpacing": 0.5
+            },
+            {
+              "type": "frame",
+              "id": "iJR8B",
+              "x": 12,
+              "y": 108,
+              "name": "Nav selected Tổng quan",
+              "width": 164,
+              "height": 44,
+              "fill": "#FFFFFF",
+              "cornerRadius": 8,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "lkJcm",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Overview icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "layout-dashboard",
+                  "library": "lucide",
+                  "fill": "$pvcfc-green-dark"
+                },
+                {
+                  "type": "text",
+                  "id": "UeIfC",
+                  "x": 42,
+                  "y": 13,
+                  "name": "Overview label",
+                  "fill": "$pvcfc-green-dark",
+                  "content": "Tổng quan",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 14,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ETKoD",
+              "x": 12,
+              "y": 158,
+              "name": "Nav Bảo dưỡng định kỳ",
+              "width": 164,
+              "height": 44,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "rhPMV",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Maintenance icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "wrench",
+                  "library": "lucide",
+                  "fill": "#CFE7D8"
+                },
+                {
+                  "type": "text",
+                  "id": "xbYi9",
+                  "x": 42,
+                  "y": 13,
+                  "name": "Maintenance label",
+                  "fill": "#FFFFFF",
+                  "content": "Bảo dưỡng định kỳ",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "X5fKhy",
+              "x": 12,
+              "y": 208,
+              "name": "Nav Chất lượng",
+              "width": 164,
+              "height": 44,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "J7Pk1I",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Quality icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "badge-check",
+                  "library": "lucide",
+                  "fill": "#CFE7D8"
+                },
+                {
+                  "type": "text",
+                  "id": "VfD9H",
+                  "x": 42,
+                  "y": 13,
+                  "name": "Quality label",
+                  "fill": "#FFFFFF",
+                  "content": "Chất lượng",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "hykHK",
+              "x": 12,
+              "y": 258,
+              "name": "Nav HSE",
+              "width": 164,
+              "height": 44,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "xmdRK",
+                  "x": 12,
+                  "y": 12,
+                  "name": "HSE icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "shield-check",
+                  "library": "lucide",
+                  "fill": "#CFE7D8"
+                },
+                {
+                  "type": "text",
+                  "id": "t1KoJ",
+                  "x": 42,
+                  "y": 13,
+                  "name": "HSE label",
+                  "fill": "#FFFFFF",
+                  "content": "HSE",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cHMmK",
+              "x": 12,
+              "y": 308,
+              "name": "Nav Kho vận",
+              "width": 164,
+              "height": 44,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "IS28A",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Warehouse icon",
+                  "width": 20,
+                  "height": 20,
+                  "icon": "warehouse",
+                  "library": "lucide",
+                  "fill": "#CFE7D8"
+                },
+                {
+                  "type": "text",
+                  "id": "P3ACZs",
+                  "x": 42,
+                  "y": 13,
+                  "name": "Warehouse label",
+                  "fill": "#FFFFFF",
+                  "content": "Kho vận",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "T2A28y",
+              "x": 14,
+              "y": 616,
+              "name": "Data governance note",
+              "width": 160,
+              "height": 82,
+              "fill": "#0A4B27",
+              "cornerRadius": 8,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "gOo8B",
+                  "x": 12,
+                  "y": 12,
+                  "name": "Database icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "database",
+                  "library": "lucide",
+                  "fill": "#A9CEB8"
+                },
+                {
+                  "type": "text",
+                  "id": "NdPAT",
+                  "x": 36,
+                  "y": 12,
+                  "name": "Sample data label",
+                  "fill": "#FFFFFF",
+                  "content": "DỮ LIỆU MẪU",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "R7IT3t",
+                  "x": 12,
+                  "y": 37,
+                  "name": "Sample data note",
+                  "fill": "#CFE7D8",
+                  "textGrowth": "fixed-width",
+                  "width": 136,
+                  "content": "Nguồn: KPI Phase 2\nCập nhật: hàng tháng",
+                  "lineHeight": 1.35,
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "azU8T",
+          "x": 188,
+          "y": 0,
+          "name": "Top report header",
+          "width": 1092,
+          "height": 68,
+          "fill": "$surface",
+          "stroke": "$border",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "JI7C8",
+              "x": 24,
+              "y": 12,
+              "name": "Report title",
+              "fill": "$text-primary",
+              "content": "Tổng quan vận hành nhà máy",
+              "fontFamily": "$font-ui",
+              "fontSize": 22,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "aYBR2",
+              "x": 24,
+              "y": 41,
+              "name": "Report subtitle",
+              "fill": "$text-secondary",
+              "content": "Phase 2 · 188 KPI · BCBD, Chất lượng, HSE và Kho vận",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "wY4K3",
+              "x": 654,
+              "y": 19,
+              "name": "Sample badge",
+              "width": 112,
+              "height": 30,
+              "fill": "#FFF3E5",
+              "cornerRadius": 15,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "owdHM",
+                  "x": 11,
+                  "y": 11,
+                  "name": "Sample status dot",
+                  "fill": "$warning",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "l88xO",
+                  "x": 26,
+                  "y": 8,
+                  "name": "Sample badge text",
+                  "fill": "#8C4A0C",
+                  "content": "DỮ LIỆU MẪU",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "E6gtJ",
+              "x": 778,
+              "y": 10,
+              "name": "Global slicer Phân hệ",
+              "metadata": {
+                "type": "power-bi-slicer",
+                "field": "Phân hệ",
+                "scope": "Toàn bộ báo cáo",
+                "display": "Dropdown"
+              },
+              "width": 138,
+              "height": 48,
+              "fill": "#F8FAF9",
+              "cornerRadius": 8,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "E6W1KJ",
+                  "x": 12,
+                  "y": 6,
+                  "name": "Module slicer label",
+                  "fill": "$text-secondary",
+                  "content": "PHÂN HỆ",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "mw9U7",
+                  "x": 12,
+                  "y": 24,
+                  "name": "Module slicer value",
+                  "fill": "$text-primary",
+                  "content": "Tất cả",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon",
+                  "id": "c7Vl0G",
+                  "x": 110,
+                  "y": 23,
+                  "name": "Module dropdown icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "chevron-down",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "MWaUk",
+              "x": 928,
+              "y": 10,
+              "name": "Global slicer Kỳ báo cáo",
+              "metadata": {
+                "type": "power-bi-slicer",
+                "field": "Kỳ báo cáo",
+                "scope": "Toàn bộ báo cáo",
+                "display": "Date slicer",
+                "default": "Tháng hiện tại"
+              },
+              "width": 152,
+              "height": 48,
+              "fill": "#F8FAF9",
+              "cornerRadius": 8,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "oBux8",
+                  "x": 12,
+                  "y": 6,
+                  "name": "Period slicer label",
+                  "fill": "$text-secondary",
+                  "content": "KỲ BÁO CÁO",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "J8TZbf",
+                  "x": 12,
+                  "y": 24,
+                  "name": "Period slicer value",
+                  "fill": "$text-primary",
+                  "content": "Tháng 08 / 2026",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "icon",
+                  "id": "FqoQf",
+                  "x": 124,
+                  "y": 23,
+                  "name": "Calendar icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "calendar-days",
+                  "library": "lucide",
+                  "fill": "$text-secondary"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "MPNVK",
+          "x": 212,
+          "y": 84,
+          "name": "Page context row",
+          "width": 1044,
+          "height": 40,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "EKEYP",
+              "x": 0,
+              "y": 0,
+              "name": "Page heading",
+              "fill": "$text-primary",
+              "content": "Hiệu suất tổng thể",
+              "fontFamily": "$font-ui",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "kDxnr",
+              "x": 0,
+              "y": 24,
+              "name": "Page description",
+              "fill": "$text-secondary",
+              "content": "Theo dõi nhanh KPI cốt lõi và các ngoại lệ cần hành động",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "srDPS",
+              "x": 855,
+              "y": 5,
+              "name": "Comparison period badge",
+              "width": 189,
+              "height": 30,
+              "fill": "$pvcfc-green-soft",
+              "cornerRadius": 8,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "B2LkE",
+                  "x": 10,
+                  "y": 7,
+                  "name": "Trend compare icon",
+                  "width": 16,
+                  "height": 16,
+                  "icon": "git-compare-arrows",
+                  "library": "lucide",
+                  "fill": "$pvcfc-green"
+                },
+                {
+                  "type": "text",
+                  "id": "h6qKU",
+                  "x": 32,
+                  "y": 8,
+                  "name": "Comparison text",
+                  "fill": "$pvcfc-green-dark",
+                  "content": "So với cùng kỳ năm trước",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cClAp",
+          "x": 212,
+          "y": 136,
+          "name": "KPI Card Component · Tỷ lệ hoàn thành BDĐK",
+          "reusable": true,
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "card",
+            "dataFields": [
+              "Tỷ lệ hoàn thành BDĐK"
+            ],
+            "format": "0.0%",
+            "tooltip": "(Số hạng mục BDĐK hoàn thành / Tổng số hạng mục BDĐK theo kế hoạch) × 100",
+            "sampleData": true
+          },
+          "clip": true,
+          "width": 249,
+          "height": 114,
+          "fill": "$surface",
+          "cornerRadius": "$radius-card",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#173E2714",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 8
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "kCAKO",
+              "x": 0,
+              "y": 0,
+              "name": "KPI accent",
+              "fill": "$pvcfc-green",
+              "width": 4,
+              "height": 114
+            },
+            {
+              "type": "frame",
+              "id": "mXzwf",
+              "x": 16,
+              "y": 14,
+              "name": "KPI icon container",
+              "width": 36,
+              "height": 36,
+              "fill": "$pvcfc-green-soft",
+              "cornerRadius": 8,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "wGjSY",
+                  "x": 9,
+                  "y": 9,
+                  "name": "KPI icon",
+                  "width": 18,
+                  "height": 18,
+                  "icon": "circle-check-big",
+                  "library": "lucide",
+                  "fill": "$pvcfc-green"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "kr39j",
+              "x": 64,
+              "y": 15,
+              "name": "KPI label",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 169,
+              "content": "Tỷ lệ hoàn thành BDĐK",
+              "lineHeight": 1.25,
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "mpaAB",
+              "x": 16,
+              "y": 55,
+              "name": "KPI value",
+              "fill": "$text-primary",
+              "content": "86.4%",
+              "fontFamily": "$font-ui",
+              "fontSize": 27,
+              "fontWeight": "700",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "frame",
+              "id": "mHJZk",
+              "x": 148,
+              "y": 59,
+              "name": "KPI delta badge",
+              "width": 85,
+              "height": 24,
+              "fill": "#FDECEA",
+              "cornerRadius": 12,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "bugtD",
+                  "x": 8,
+                  "y": 6,
+                  "name": "KPI delta icon",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "arrow-down-right",
+                  "library": "lucide",
+                  "fill": "$danger"
+                },
+                {
+                  "type": "text",
+                  "id": "gMkr3",
+                  "x": 24,
+                  "y": 5,
+                  "name": "KPI delta text",
+                  "fill": "$danger",
+                  "content": "-2.1 điểm",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "X8rgrV",
+              "x": 16,
+              "y": 91,
+              "name": "KPI target note",
+              "fill": "$text-secondary",
+              "content": "Mục tiêu tham khảo ≥ 90%",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "icon",
+              "id": "B5QU8",
+              "x": 218,
+              "y": 91,
+              "name": "KPI formula info",
+              "width": 14,
+              "height": 14,
+              "icon": "info",
+              "library": "lucide",
+              "fill": "$text-secondary"
+            }
+          ]
+        },
+        {
+          "id": "z9Opxj",
+          "type": "ref",
+          "ref": "cClAp",
+          "name": "KPI Card · Tỷ lệ an toàn lao động",
+          "x": 477,
+          "y": 136,
+          "width": 249,
+          "height": 114,
+          "descendants": {
+            "kCAKO": {
+              "fill": "#278B57"
+            },
+            "mXzwf": {
+              "fill": "#E8F4ED"
+            },
+            "wGjSY": {
+              "icon": "shield-check",
+              "fill": "#127A3E"
+            },
+            "kr39j": {
+              "content": "Tỷ lệ an toàn lao động"
+            },
+            "mpaAB": {
+              "content": "98.7%"
+            },
+            "mHJZk": {
+              "fill": "#E8F4ED"
+            },
+            "bugtD": {
+              "icon": "arrow-up-right",
+              "fill": "#127A3E"
+            },
+            "gMkr3": {
+              "content": "+0.4 điểm",
+              "fill": "#127A3E"
+            },
+            "X8rgrV": {
+              "content": "Mục tiêu tham khảo 100%"
+            }
+          }
+        },
+        {
+          "id": "a3G5fK",
+          "type": "ref",
+          "ref": "cClAp",
+          "name": "KPI Card · Tỷ lệ đạt chất lượng NVL",
+          "x": 742,
+          "y": 136,
+          "width": 249,
+          "height": 114,
+          "descendants": {
+            "kCAKO": {
+              "fill": "#3E8EDE"
+            },
+            "mXzwf": {
+              "fill": "#EAF3FC"
+            },
+            "wGjSY": {
+              "icon": "badge-check",
+              "fill": "#2B6DA8"
+            },
+            "kr39j": {
+              "content": "Tỷ lệ đạt chất lượng NVL"
+            },
+            "mpaAB": {
+              "content": "96.2%"
+            },
+            "mHJZk": {
+              "fill": "#E8F4ED"
+            },
+            "bugtD": {
+              "icon": "arrow-up-right",
+              "fill": "#127A3E"
+            },
+            "gMkr3": {
+              "content": "+1.8 điểm",
+              "fill": "#127A3E"
+            },
+            "X8rgrV": {
+              "content": "Mục tiêu tham khảo ≥ 95%"
+            }
+          }
+        },
+        {
+          "id": "N9vZ9",
+          "type": "ref",
+          "ref": "cClAp",
+          "name": "KPI Card · Số WO quá hạn",
+          "x": 1007,
+          "y": 136,
+          "width": 249,
+          "height": 114,
+          "descendants": {
+            "kCAKO": {
+              "fill": "#C96B12"
+            },
+            "mXzwf": {
+              "fill": "#FFF3E5"
+            },
+            "wGjSY": {
+              "icon": "clock-alert",
+              "fill": "#C96B12"
+            },
+            "kr39j": {
+              "content": "Số WO quá hạn"
+            },
+            "mpaAB": {
+              "content": "23"
+            },
+            "mHJZk": {
+              "fill": "#FDECEA"
+            },
+            "bugtD": {
+              "icon": "arrow-up-right",
+              "fill": "#B42318"
+            },
+            "gMkr3": {
+              "content": "+5 WO",
+              "fill": "#B42318"
+            },
+            "X8rgrV": {
+              "content": "Cần ưu tiên xử lý trong kỳ"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "N7ICQ",
+          "x": 212,
+          "y": 266,
+          "name": "Bar chart · Tỷ lệ hoàn thành BDĐK theo nhóm thiết bị",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "bar",
+            "dataFields": [
+              "Nhóm thiết bị",
+              "Tỷ lệ hoàn thành BDĐK"
+            ],
+            "sort": "descending by value",
+            "interaction": "Chọn nhóm thiết bị để làm nổi bật KPI liên quan",
+            "tooltip": [
+              "Nhóm thiết bị",
+              "Tỷ lệ hoàn thành BDĐK",
+              "Số lượng WO quá hạn"
+            ],
+            "sampleData": true
+          },
+          "width": 512,
+          "height": 238,
+          "fill": "$surface",
+          "cornerRadius": "$radius-card",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#173E2710",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 8
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "vZ6Lb",
+              "x": 18,
+              "y": 15,
+              "name": "Bar chart title",
+              "fill": "$text-primary",
+              "content": "Hoàn thành BDĐK theo nhóm thiết bị",
+              "fontFamily": "$font-ui",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "kbWrg",
+              "x": 18,
+              "y": 39,
+              "name": "Bar chart subtitle",
+              "fill": "$text-secondary",
+              "content": "Tỷ lệ hoàn thành trong kỳ · sắp xếp giảm dần",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "g6FaT",
+              "x": 384,
+              "y": 13,
+              "name": "Bar chart target badge",
+              "width": 110,
+              "height": 26,
+              "fill": "$pvcfc-green-soft",
+              "cornerRadius": 13,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "Qmo9X",
+                  "x": 9,
+                  "y": 9,
+                  "name": "Target badge dot",
+                  "fill": "$pvcfc-green",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "mpjYf",
+                  "x": 23,
+                  "y": 6,
+                  "name": "Target badge label",
+                  "fill": "$pvcfc-green-dark",
+                  "content": "Mục tiêu 90%",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "O2NHu",
+              "x": 18,
+              "y": 68,
+              "name": "Bar chart rows",
+              "width": 476,
+              "height": 140,
+              "layout": "vertical",
+              "gap": 7,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Gqfl3",
+                  "name": "Bar row Nhóm TB-01",
+                  "width": "fill_container",
+                  "height": 29,
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pxkEN",
+                      "name": "Bar label TB-01",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 86,
+                      "content": "Nhóm TB-01",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "sAf4Z",
+                      "name": "Bar track TB-01",
+                      "width": 326,
+                      "height": 12,
+                      "fill": "#EDF2EF",
+                      "cornerRadius": 6,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "yXXha",
+                          "x": 0,
+                          "y": 0,
+                          "name": "Bar value TB-01",
+                          "fill": "$pvcfc-green",
+                          "width": 307,
+                          "height": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "z9vLK4",
+                      "name": "Bar value label TB-01",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 48,
+                      "content": "94.1%",
+                      "textAlign": "right",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "J24n6m",
+                  "name": "Bar row Nhóm TB-02",
+                  "width": "fill_container",
+                  "height": 29,
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TZOrn",
+                      "name": "Bar label TB-02",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 86,
+                      "content": "Nhóm TB-02",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F7uQ1m",
+                      "name": "Bar track TB-02",
+                      "width": 326,
+                      "height": 12,
+                      "fill": "#EDF2EF",
+                      "cornerRadius": 6,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "K2EKiC",
+                          "x": 0,
+                          "y": 0,
+                          "name": "Bar value TB-02",
+                          "fill": "#278B57",
+                          "width": 296,
+                          "height": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "grrhD",
+                      "name": "Bar value label TB-02",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 48,
+                      "content": "90.8%",
+                      "textAlign": "right",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BqOgJ",
+                  "name": "Bar row Nhóm TB-03",
+                  "width": "fill_container",
+                  "height": 29,
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rlxcy",
+                      "name": "Bar label TB-03",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 86,
+                      "content": "Nhóm TB-03",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "W8Fsz",
+                      "name": "Bar track TB-03",
+                      "width": 326,
+                      "height": 12,
+                      "fill": "#EDF2EF",
+                      "cornerRadius": 6,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "cHli3",
+                          "x": 0,
+                          "y": 0,
+                          "name": "Bar value TB-03",
+                          "fill": "#D69B2D",
+                          "width": 282,
+                          "height": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "P1jNH",
+                      "name": "Bar value label TB-03",
+                      "fill": "$warning",
+                      "textGrowth": "fixed-width",
+                      "width": 48,
+                      "content": "86.4%",
+                      "textAlign": "right",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "o9P8Ru",
+                  "name": "Bar row Nhóm TB-04",
+                  "width": "fill_container",
+                  "height": 29,
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "yFIWG",
+                      "name": "Bar label TB-04",
+                      "fill": "$text-primary",
+                      "textGrowth": "fixed-width",
+                      "width": 86,
+                      "content": "Nhóm TB-04",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Vs6AA",
+                      "name": "Bar track TB-04",
+                      "width": 326,
+                      "height": 12,
+                      "fill": "#EDF2EF",
+                      "cornerRadius": 6,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 6,
+                          "id": "LqLTq",
+                          "x": 0,
+                          "y": 0,
+                          "name": "Bar value TB-04",
+                          "fill": "$warning",
+                          "width": 265,
+                          "height": 12
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "PKX3g",
+                      "name": "Bar value label TB-04",
+                      "fill": "$danger",
+                      "textGrowth": "fixed-width",
+                      "width": 48,
+                      "content": "81.2%",
+                      "textAlign": "right",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "X6tMj",
+              "x": 18,
+              "y": 215,
+              "name": "Bar chart footnote",
+              "fill": "$text-secondary",
+              "content": "Mẫu nhóm thiết bị — thay bằng danh mục thực khi kết nối dữ liệu",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WFmKB",
+          "x": 740,
+          "y": 266,
+          "name": "Line chart · Xu hướng tỷ lệ an toàn theo tháng",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "line",
+            "dataFields": [
+              "Kỳ báo cáo",
+              "Tỷ lệ đạt an toàn lao động"
+            ],
+            "timeGrain": "Tháng",
+            "comparison": "Cùng kỳ năm trước",
+            "sampleData": true
+          },
+          "width": 516,
+          "height": 238,
+          "fill": "$surface",
+          "cornerRadius": "$radius-card",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#173E2710",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 8
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "R4feC",
+              "x": 18,
+              "y": 15,
+              "name": "Line chart title",
+              "fill": "$text-primary",
+              "content": "Xu hướng tỷ lệ an toàn lao động",
+              "fontFamily": "$font-ui",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "O2NTZ",
+              "x": 18,
+              "y": 39,
+              "name": "Line chart subtitle",
+              "fill": "$text-secondary",
+              "content": "Theo tháng · so với cùng kỳ năm trước",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "W3eWEi",
+              "x": 405,
+              "y": 13,
+              "name": "Line trend badge",
+              "width": 93,
+              "height": 26,
+              "fill": "$pvcfc-green-soft",
+              "cornerRadius": 13,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "U4rHD",
+                  "x": 9,
+                  "y": 7,
+                  "name": "Line trend icon",
+                  "width": 12,
+                  "height": 12,
+                  "icon": "trending-up",
+                  "library": "lucide",
+                  "fill": "$pvcfc-green"
+                },
+                {
+                  "type": "text",
+                  "id": "GKSQN",
+                  "x": 25,
+                  "y": 6,
+                  "name": "Line trend label",
+                  "fill": "$pvcfc-green-dark",
+                  "content": "+0.4 điểm",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "F8MLf4",
+              "x": 18,
+              "y": 68,
+              "name": "Y axis 100",
+              "fill": "$text-secondary",
+              "content": "100%",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "HKPMd",
+              "x": 24,
+              "y": 101,
+              "name": "Y axis 98",
+              "fill": "$text-secondary",
+              "content": "98",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "CCUGQ",
+              "x": 24,
+              "y": 134,
+              "name": "Y axis 96",
+              "fill": "$text-secondary",
+              "content": "96",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "d2EYY",
+              "x": 24,
+              "y": 167,
+              "name": "Y axis 94",
+              "fill": "$text-secondary",
+              "content": "94",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "B0f0W",
+              "x": 52,
+              "y": 74,
+              "name": "Grid line 100",
+              "fill": "#E5ECE7",
+              "width": 446,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "HjySm",
+              "x": 52,
+              "y": 107,
+              "name": "Grid line 98",
+              "fill": "#E5ECE7",
+              "width": 446,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "KhS1I",
+              "x": 52,
+              "y": 140,
+              "name": "Grid line 96",
+              "fill": "#E5ECE7",
+              "width": 446,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "LvmXU",
+              "x": 52,
+              "y": 173,
+              "name": "Grid line 94",
+              "fill": "#E5ECE7",
+              "width": 446,
+              "height": 1
+            },
+            {
+              "type": "path",
+              "id": "G0LMTN",
+              "x": 52,
+              "y": 76,
+              "name": "Safety trend line",
+              "geometry": "M0 86l86-14 86 6 86-25 86-8 86-11",
+              "viewBox": [
+                0,
+                0,
+                430,
+                110
+              ],
+              "fill": "#00000000",
+              "width": 430,
+              "height": 94,
+              "stroke": "$pvcfc-green",
+              "strokeWidth": 3,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
+            },
+            {
+              "type": "ellipse",
+              "id": "PyqgU",
+              "x": 476,
+              "y": 101,
+              "name": "Latest value point",
+              "fill": "$surface",
+              "width": 10,
+              "height": 10,
+              "stroke": "$pvcfc-green",
+              "strokeWidth": 3
+            },
+            {
+              "type": "frame",
+              "id": "njNsn",
+              "x": 421,
+              "y": 67,
+              "name": "Latest value tooltip",
+              "width": 76,
+              "height": 28,
+              "fill": "$pvcfc-green-dark",
+              "cornerRadius": 6,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "H8zZy1",
+                  "x": 10,
+                  "y": 7,
+                  "name": "Latest value text",
+                  "fill": "#FFFFFF",
+                  "content": "98.7%",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "s9ulkQ",
+              "x": 48,
+              "y": 192,
+              "name": "Month Mar",
+              "fill": "$text-secondary",
+              "content": "Thg 3",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "dGr8g",
+              "x": 132,
+              "y": 192,
+              "name": "Month Apr",
+              "fill": "$text-secondary",
+              "content": "Thg 4",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "vZY0Q",
+              "x": 216,
+              "y": 192,
+              "name": "Month May",
+              "fill": "$text-secondary",
+              "content": "Thg 5",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "qmQaH",
+              "x": 300,
+              "y": 192,
+              "name": "Month Jun",
+              "fill": "$text-secondary",
+              "content": "Thg 6",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "kCHhy",
+              "x": 384,
+              "y": 192,
+              "name": "Month Jul",
+              "fill": "$text-secondary",
+              "content": "Thg 7",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "ABIVk",
+              "x": 468,
+              "y": 192,
+              "name": "Month Aug",
+              "fill": "$text-secondary",
+              "content": "Thg 8",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "A8YJjr",
+          "x": 212,
+          "y": 520,
+          "name": "Donut chart · Phân bố KPI theo trạng thái",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "donut",
+            "dataFields": [
+              "Trạng thái",
+              "STT"
+            ],
+            "aggregation": "Count of KPI",
+            "sampleData": false
+          },
+          "width": 384,
+          "height": 176,
+          "fill": "$surface",
+          "cornerRadius": "$radius-card",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#173E2710",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 8
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "b6SeD",
+              "x": 18,
+              "y": 14,
+              "name": "Donut title",
+              "fill": "$text-primary",
+              "content": "Phân bố KPI theo trạng thái",
+              "fontFamily": "$font-ui",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "v8QMt",
+              "x": 18,
+              "y": 37,
+              "name": "Donut subtitle",
+              "fill": "$text-secondary",
+              "content": "Danh mục Phase 2 · 188 KPI",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "ellipse",
+              "id": "OyLGW",
+              "x": 20,
+              "y": 62,
+              "name": "Donut base",
+              "innerRadius": 0.64,
+              "fill": "#EDF2EF",
+              "width": 94,
+              "height": 94
+            },
+            {
+              "type": "ellipse",
+              "id": "s4tJU",
+              "x": 20,
+              "y": 62,
+              "name": "Donut new segment",
+              "innerRadius": 0.64,
+              "sweepAngle": 293,
+              "fill": "$warning",
+              "width": 94,
+              "height": 94
+            },
+            {
+              "type": "ellipse",
+              "id": "QljYO",
+              "x": 20,
+              "y": 62,
+              "name": "Donut PBI segment",
+              "innerRadius": 0.64,
+              "startAngle": 293,
+              "sweepAngle": 40,
+              "fill": "$pvcfc-green",
+              "width": 94,
+              "height": 94
+            },
+            {
+              "type": "ellipse",
+              "id": "pUlGj",
+              "x": 20,
+              "y": 62,
+              "name": "Donut other report segment",
+              "innerRadius": 0.64,
+              "startAngle": 333,
+              "sweepAngle": 27,
+              "fill": "#3E8EDE",
+              "width": 94,
+              "height": 94
+            },
+            {
+              "type": "text",
+              "id": "SlziP",
+              "x": 49,
+              "y": 91,
+              "name": "Donut center total",
+              "fill": "$text-primary",
+              "content": "188",
+              "fontFamily": "$font-ui",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "F2gibF",
+              "x": 53,
+              "y": 115,
+              "name": "Donut center label",
+              "fill": "$text-secondary",
+              "content": "KPI",
+              "fontFamily": "$font-ui",
+              "fontSize": 12,
+              "fontWeight": "600"
+            },
+            {
+              "type": "frame",
+              "id": "XwKIL",
+              "x": 138,
+              "y": 62,
+              "name": "Donut legend",
+              "width": 228,
+              "height": 96,
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VIJoU",
+                  "name": "Legend Tạo mới",
+                  "width": "fill_container",
+                  "height": 26,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "H2RTn",
+                      "x": 0,
+                      "y": 8,
+                      "name": "Legend dot Tạo mới",
+                      "fill": "$warning",
+                      "width": 10,
+                      "height": 10
+                    },
+                    {
+                      "type": "text",
+                      "id": "g0VXL",
+                      "x": 20,
+                      "y": 4,
+                      "name": "Legend label Tạo mới",
+                      "fill": "$text-primary",
+                      "content": "Tạo mới",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aSmoe",
+                      "x": 157,
+                      "y": 4,
+                      "name": "Legend value Tạo mới",
+                      "fill": "$text-primary",
+                      "content": "153 · 81.4%",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ox9sK",
+                  "name": "Legend Đã có PBI",
+                  "width": "fill_container",
+                  "height": 26,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "uJKlG",
+                      "x": 0,
+                      "y": 8,
+                      "name": "Legend dot Đã có PBI",
+                      "fill": "$pvcfc-green",
+                      "width": 10,
+                      "height": 10
+                    },
+                    {
+                      "type": "text",
+                      "id": "BZ9WF",
+                      "x": 20,
+                      "y": 4,
+                      "name": "Legend label Đã có PBI",
+                      "fill": "$text-primary",
+                      "content": "Đã có PBI",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "wBkVO",
+                      "x": 157,
+                      "y": 4,
+                      "name": "Legend value Đã có PBI",
+                      "fill": "$text-primary",
+                      "content": "21 · 11.2%",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mEMHN",
+                  "name": "Legend Đã có BC khác",
+                  "width": "fill_container",
+                  "height": 26,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "e7LOnT",
+                      "x": 0,
+                      "y": 8,
+                      "name": "Legend dot Đã có BC khác",
+                      "fill": "#3E8EDE",
+                      "width": 10,
+                      "height": 10
+                    },
+                    {
+                      "type": "text",
+                      "id": "IjQf6",
+                      "x": 20,
+                      "y": 4,
+                      "name": "Legend label Đã có BC khác",
+                      "fill": "$text-primary",
+                      "content": "Đã có BC khác",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "600"
+                    },
+                    {
+                      "type": "text",
+                      "id": "R8reCm",
+                      "x": 157,
+                      "y": 4,
+                      "name": "Legend value Đã có BC khác",
+                      "fill": "$text-primary",
+                      "content": "14 · 7.4%",
+                      "fontFamily": "$font-ui",
+                      "fontSize": 12,
+                      "fontWeight": "700"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "tTRMf",
+          "x": 612,
+          "y": 520,
+          "name": "Table · Ưu tiên hành động",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "table",
+            "dataFields": [
+              "Phân hệ",
+              "KPI",
+              "Số liệu KPI"
+            ],
+            "drillthroughTargets": [
+              "Chi tiết hạng mục bảo dưỡng",
+              "Chi tiết lô NVL"
+            ],
+            "sampleData": true
+          },
+          "width": 644,
+          "height": 176,
+          "fill": "$surface",
+          "cornerRadius": "$radius-card",
+          "stroke": "$border",
+          "strokeWidth": 1,
+          "effect": {
+            "type": "shadow",
+            "shadowType": "outer",
+            "color": "#173E2710",
+            "offset": {
+              "x": 0,
+              "y": 2
+            },
+            "blur": 8
+          },
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "Fxuye",
+              "x": 18,
+              "y": 14,
+              "name": "Action table title",
+              "fill": "$text-primary",
+              "content": "Ưu tiên hành động",
+              "fontFamily": "$font-ui",
+              "fontSize": 15,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "hejXV",
+              "x": 506,
+              "y": 11,
+              "name": "Action table sample badge",
+              "width": 120,
+              "height": 26,
+              "fill": "#FFF3E5",
+              "cornerRadius": 13,
+              "layout": "none",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "O0Pfb",
+                  "x": 9,
+                  "y": 9,
+                  "name": "Action sample dot",
+                  "fill": "$warning",
+                  "width": 8,
+                  "height": 8
+                },
+                {
+                  "type": "text",
+                  "id": "qqiMa",
+                  "x": 23,
+                  "y": 6,
+                  "name": "Action sample text",
+                  "fill": "#8C4A0C",
+                  "content": "DỮ LIỆU MẪU",
+                  "fontFamily": "$font-ui",
+                  "fontSize": 12,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bDMDm",
+              "x": 18,
+              "y": 47,
+              "name": "Action priority table",
+              "clip": true,
+              "width": 608,
+              "height": 112,
+              "cornerRadius": 6,
+              "stroke": "$border",
+              "strokeWidth": 1,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "r5pkq",
+                  "name": "Table Header Row",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "#F3F7F4",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "i5Ylp",
+                      "name": "Header Cell VẤN ĐỀ CẦN CHÚ Ý",
+                      "width": 326,
+                      "height": "fill_container",
+                      "padding": [
+                        7,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P28y3",
+                          "name": "Header Text VẤN ĐỀ CẦN CHÚ Ý",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "VẤN ĐỀ CẦN CHÚ Ý",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WVXY0",
+                      "name": "Header Cell GIÁ TRỊ",
+                      "width": 82,
+                      "height": "fill_container",
+                      "padding": [
+                        7,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cuDYm",
+                          "name": "Header Text GIÁ TRỊ",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "GIÁ TRỊ",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "F6Von4",
+                      "name": "Header Cell HÀNH ĐỘNG ĐỀ XUẤT",
+                      "width": 198,
+                      "height": "fill_container",
+                      "padding": [
+                        7,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "bJeCR",
+                          "name": "Header Text HÀNH ĐỘNG ĐỀ XUẤT",
+                          "fill": "$text-secondary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "HÀNH ĐỘNG ĐỀ XUẤT",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eDG9u",
+                  "name": "Table Data Row · WO quá hạn · BCBD",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "#FFFFFF",
+                  "stroke": "$border",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "L3h6vt",
+                      "name": "Issue Cell · WO quá hạn · BCBD",
+                      "width": 326,
+                      "height": "fill_container",
+                      "padding": [
+                        6,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ANgJ0",
+                          "name": "Issue Text · WO quá hạn · BCBD",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "WO quá hạn · BCBD",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TVIvN",
+                      "name": "Value Cell · WO quá hạn · BCBD",
+                      "width": 82,
+                      "height": "fill_container",
+                      "padding": [
+                        5,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Zw65x",
+                          "name": "Value Text · WO quá hạn · BCBD",
+                          "fill": "#B42318",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "23",
+                          "textAlign": "center",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "foSWC",
+                      "name": "Action Cell · WO quá hạn · BCBD",
+                      "width": 198,
+                      "height": "fill_container",
+                      "padding": [
+                        6,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZPphk",
+                          "name": "Action Text · WO quá hạn · BCBD",
+                          "fill": "$pvcfc-green-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Phân bổ nguồn lực",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "L7l1jn",
+                  "name": "Table Data Row · Lô cảnh báo / thu hồi",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "#FFFFFF",
+                  "stroke": "$border",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ueX3I",
+                      "name": "Issue Cell · Lô cảnh báo / thu hồi",
+                      "width": 326,
+                      "height": "fill_container",
+                      "padding": [
+                        6,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "T5LG58",
+                          "name": "Issue Text · Lô cảnh báo / thu hồi",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Lô cảnh báo / thu hồi",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o9FNU",
+                      "name": "Value Cell · Lô cảnh báo / thu hồi",
+                      "width": 82,
+                      "height": "fill_container",
+                      "padding": [
+                        5,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SaGsp",
+                          "name": "Value Text · Lô cảnh báo / thu hồi",
+                          "fill": "#C96B12",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "2",
+                          "textAlign": "center",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kb5HU",
+                      "name": "Action Cell · Lô cảnh báo / thu hồi",
+                      "width": 198,
+                      "height": "fill_container",
+                      "padding": [
+                        6,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fruXP",
+                          "name": "Action Text · Lô cảnh báo / thu hồi",
+                          "fill": "$pvcfc-green-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Kiểm tra chất lượng",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IuNEJ",
+                  "name": "Table Data Row · Sản phẩm dưới ngưỡng cung ứng",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "#FFFFFF",
+                  "stroke": "$border",
+                  "strokeWidth": {
+                    "top": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "GXKLL",
+                      "name": "Issue Cell · Sản phẩm dưới ngưỡng cung ứng",
+                      "width": 326,
+                      "height": "fill_container",
+                      "padding": [
+                        6,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Tru38",
+                          "name": "Issue Text · Sản phẩm dưới ngưỡng cung ứng",
+                          "fill": "$text-primary",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Sản phẩm dưới ngưỡng cung ứng",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dxC7p",
+                      "name": "Value Cell · Sản phẩm dưới ngưỡng cung ứng",
+                      "width": 82,
+                      "height": "fill_container",
+                      "padding": [
+                        5,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QZwiE",
+                          "name": "Value Text · Sản phẩm dưới ngưỡng cung ứng",
+                          "fill": "#C96B12",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "4",
+                          "textAlign": "center",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 13,
+                          "fontWeight": "700"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "owUA7",
+                      "name": "Action Cell · Sản phẩm dưới ngưỡng cung ứng",
+                      "width": 198,
+                      "height": "fill_container",
+                      "padding": [
+                        6,
+                        10
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oEUZX",
+                          "name": "Action Text · Sản phẩm dưới ngưỡng cung ứng",
+                          "fill": "$pvcfc-green-dark",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Ưu tiên bổ sung",
+                          "fontFamily": "$font-ui",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color.background": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.foreground": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "color.accent": {
+      "type": "color",
+      "value": "#118DFF"
+    },
+    "pvcfc-green": {
+      "type": "color",
+      "value": "#127A3E"
+    },
+    "pvcfc-green-dark": {
+      "type": "color",
+      "value": "#0B5A2E"
+    },
+    "pvcfc-green-soft": {
+      "type": "color",
+      "value": "#E7F2EB"
+    },
+    "page-bg": {
+      "type": "color",
+      "value": "#F3F6F4"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "text-primary": {
+      "type": "color",
+      "value": "#17231C"
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": "#5B6B61"
+    },
+    "border": {
+      "type": "color",
+      "value": "#DDE6E0"
+    },
+    "warning": {
+      "type": "color",
+      "value": "#C96B12"
+    },
+    "danger": {
+      "type": "color",
+      "value": "#B42318"
+    },
+    "font-ui": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "radius-card": {
+      "type": "number",
+      "value": 10
+    },
+    "space-md": {
+      "type": "number",
+      "value": 16
+    }
+  },
+  "fileToken": "358f656e-0c02-45f5-bb22-5cf879cd1180"
+}

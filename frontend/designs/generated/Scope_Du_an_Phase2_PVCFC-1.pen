@@ -1,0 +1,4249 @@
+{
+  "version": "2.17",
+  "children": [
+    {
+      "type": "frame",
+      "id": "OtJdW",
+      "x": 0,
+      "y": 300,
+      "name": "Power BI Page · Completion Rate Overview",
+      "context": "Summary page answering where maintenance completion performance stands for the last six months.",
+      "metadata": {
+        "type": "powerbi-page",
+        "pageName": "1.1 Tổng quan BD ĐK",
+        "shape": "summary",
+        "canvas": "1280x720"
+      },
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$pbi-bg",
+      "layout": "none",
+      "children": [
+        {
+          "id": "YcvaE",
+          "type": "ref",
+          "ref": "cmYUG",
+          "name": "Header · Completion Rate Overview",
+          "x": 0,
+          "y": 0,
+          "descendants": {
+            "nQmbI": {
+              "content": "Completion Rate Overview"
+            },
+            "RRbZ4": {
+              "content": "Last 6 months · Scheduled maintenance performance"
+            }
+          }
+        },
+        {
+          "id": "Lalv6",
+          "type": "ref",
+          "ref": "iJax7",
+          "name": "Slicer · WORK CENTER",
+          "x": 24,
+          "y": 80,
+          "width": 392,
+          "context": "Keyboard-navigable slicer. Selection cross-filters all page visuals.",
+          "descendants": {
+            "RgYiL": {
+              "content": "WORK CENTER"
+            },
+            "W7VUs": {
+              "content": "(All)"
+            },
+            "sTVjs": {
+              "x": 366
+            }
+          }
+        },
+        {
+          "id": "i79z4y",
+          "type": "ref",
+          "ref": "iJax7",
+          "name": "Slicer · MAINTENANCE UNIT",
+          "x": 432,
+          "y": 80,
+          "width": 392,
+          "context": "Keyboard-navigable slicer. Selection cross-filters all page visuals.",
+          "descendants": {
+            "RgYiL": {
+              "content": "MAINTENANCE UNIT"
+            },
+            "W7VUs": {
+              "content": "(All)"
+            },
+            "sTVjs": {
+              "x": 366
+            }
+          }
+        },
+        {
+          "id": "Dggxv",
+          "type": "ref",
+          "ref": "iJax7",
+          "name": "Slicer · TIME",
+          "x": 840,
+          "y": 80,
+          "width": 392,
+          "context": "Keyboard-navigable slicer. Selection cross-filters all page visuals.",
+          "descendants": {
+            "RgYiL": {
+              "content": "TIME"
+            },
+            "W7VUs": {
+              "content": "Last 6 months"
+            },
+            "sTVjs": {
+              "x": 366
+            }
+          }
+        },
+        {
+          "type": "text",
+          "id": "qXB5I",
+          "x": 1132,
+          "y": 136,
+          "name": "Illustrative Data Note",
+          "fill": "$pbi-muted",
+          "content": "ILLUSTRATIVE VALUES",
+          "fontFamily": "$pbi-font",
+          "fontSize": 9,
+          "fontWeight": "600",
+          "letterSpacing": 0.4
+        },
+        {
+          "id": "C7eMSH",
+          "type": "ref",
+          "ref": "SvAbj",
+          "name": "KPI · TOTAL PLANNED ITEMS",
+          "x": 24,
+          "y": 152,
+          "context": "KPI card for Total Planned Maintenance Items with comparison context.",
+          "descendants": {
+            "z17Yv": {
+              "fill": "$pbi-blue"
+            },
+            "PoglJ": {
+              "content": "TOTAL PLANNED ITEMS"
+            },
+            "KUP4k": {
+              "content": "1,248"
+            },
+            "SuM0q": {
+              "content": "Previous 6 months · ▲ 6.4%",
+              "fill": "$pbi-muted"
+            },
+            "uMmjk": {
+              "icon": "clipboard-list",
+              "fill": "$pbi-blue"
+            }
+          }
+        },
+        {
+          "id": "VyJlO",
+          "type": "ref",
+          "ref": "SvAbj",
+          "name": "KPI · COMPLETED ON SCHEDULE",
+          "x": 336,
+          "y": 152,
+          "context": "KPI card for Total Maintenance Items Completed On Schedule with comparison context.",
+          "descendants": {
+            "z17Yv": {
+              "fill": "$pbi-good"
+            },
+            "PoglJ": {
+              "content": "COMPLETED ON SCHEDULE"
+            },
+            "KUP4k": {
+              "content": "1,102"
+            },
+            "SuM0q": {
+              "content": "Previous 6 months · ▲ 8.1%",
+              "fill": "$pbi-good"
+            },
+            "uMmjk": {
+              "icon": "circle-check",
+              "fill": "$pbi-good"
+            }
+          }
+        },
+        {
+          "id": "y8z9v",
+          "type": "ref",
+          "ref": "SvAbj",
+          "name": "KPI · COMPLETION RATE",
+          "x": 648,
+          "y": 152,
+          "context": "KPI card for Maintenance Completion Rate with comparison context.",
+          "descendants": {
+            "z17Yv": {
+              "fill": "$pbi-warn"
+            },
+            "PoglJ": {
+              "content": "COMPLETION RATE"
+            },
+            "KUP4k": {
+              "content": "88.3%"
+            },
+            "SuM0q": {
+              "content": "Target 90% · ▼ 1.7 pp",
+              "fill": "$pbi-warn"
+            },
+            "uMmjk": {
+              "icon": "gauge",
+              "fill": "$pbi-warn"
+            }
+          }
+        },
+        {
+          "id": "st16g",
+          "type": "ref",
+          "ref": "SvAbj",
+          "name": "KPI · PLANNED VS COMPLETED VARIANCE",
+          "x": 960,
+          "y": 152,
+          "context": "KPI card for Planned vs Completed Variance with comparison context.",
+          "descendants": {
+            "z17Yv": {
+              "fill": "$pbi-bad"
+            },
+            "PoglJ": {
+              "content": "PLANNED VS COMPLETED VARIANCE"
+            },
+            "KUP4k": {
+              "content": "146"
+            },
+            "SuM0q": {
+              "content": "Lower is better · 11.7% of plan",
+              "fill": "$pbi-bad"
+            },
+            "uMmjk": {
+              "icon": "triangle-alert",
+              "fill": "$pbi-bad"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "cAmbq",
+          "x": 24,
+          "y": 280,
+          "name": "Visual · Planned vs Completed by Work Center",
+          "context": "Clustered bar chart comparing planned and completed maintenance items by work center, sorted descending by planned items.",
+          "width": 608,
+          "height": 224,
+          "fill": "$pbi-surface",
+          "cornerRadius": "$pbi-radius",
+          "stroke": "$pbi-line",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "hSJ7h",
+              "x": 16,
+              "y": 14,
+              "name": "Bar Chart Title",
+              "fill": "$pbi-ink",
+              "content": "Planned vs completed by work center",
+              "fontFamily": "$pbi-font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "O95gkM",
+              "x": 16,
+              "y": 36,
+              "name": "Bar Chart Subtitle",
+              "fill": "$pbi-muted",
+              "content": "Sorted descending by total planned items",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "H2zAoD",
+              "x": 421,
+              "y": 18,
+              "name": "Legend Planned Swatch",
+              "fill": "$pbi-blue-soft",
+              "width": 10,
+              "height": 10
+            },
+            {
+              "type": "text",
+              "id": "t186Lp",
+              "x": 437,
+              "y": 16,
+              "name": "Legend Planned Label",
+              "fill": "$pbi-muted",
+              "content": "Planned",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "cornerRadius": 2,
+              "id": "G37jsc",
+              "x": 505,
+              "y": 18,
+              "name": "Legend Completed Swatch",
+              "fill": "$pbi-blue",
+              "width": 10,
+              "height": 10
+            },
+            {
+              "type": "text",
+              "id": "e9TTnh",
+              "x": 521,
+              "y": 16,
+              "name": "Legend Completed Label",
+              "fill": "$pbi-muted",
+              "content": "Completed",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "bX2qm",
+              "x": 16,
+              "y": 64,
+              "name": "Work Center Row WC-01",
+              "width": 576,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Y5mmWZ",
+                  "name": "Label Cell WC-01",
+                  "width": 58,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EyzZ3",
+                      "name": "Work Center Label WC-01",
+                      "fill": "$pbi-ink",
+                      "content": "WC-01",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q6Y8uH",
+                  "name": "Bar Pair WC-01",
+                  "width": 390,
+                  "height": 20,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "Laayj",
+                      "name": "Planned Bar WC-01",
+                      "fill": "$pbi-blue-soft",
+                      "width": 390,
+                      "height": 7
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "W9rwk",
+                      "name": "Completed Bar WC-01",
+                      "fill": "$pbi-blue",
+                      "width": 354,
+                      "height": 7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kkRYd",
+                  "name": "Value Cell WC-01",
+                  "width": 100,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "RAtUG",
+                      "name": "Bar Values WC-01",
+                      "fill": "$pbi-muted",
+                      "content": "272 / 246",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 9,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "pAG5i",
+              "x": 16,
+              "y": 93,
+              "name": "Work Center Row WC-02",
+              "width": 576,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "vRKcT",
+                  "name": "Label Cell WC-02",
+                  "width": 58,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "c2Xm2S",
+                      "name": "Work Center Label WC-02",
+                      "fill": "$pbi-ink",
+                      "content": "WC-02",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mKGim",
+                  "name": "Bar Pair WC-02",
+                  "width": 390,
+                  "height": 20,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "h19AL",
+                      "name": "Planned Bar WC-02",
+                      "fill": "$pbi-blue-soft",
+                      "width": 354,
+                      "height": 7
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "AZap8",
+                      "name": "Completed Bar WC-02",
+                      "fill": "$pbi-blue",
+                      "width": 322,
+                      "height": 7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "T4Sfs",
+                  "name": "Value Cell WC-02",
+                  "width": 100,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BR83E",
+                      "name": "Bar Values WC-02",
+                      "fill": "$pbi-muted",
+                      "content": "248 / 224",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 9,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "crjxx",
+              "x": 16,
+              "y": 122,
+              "name": "Work Center Row WC-03",
+              "width": 576,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "BFpvS",
+                  "name": "Label Cell WC-03",
+                  "width": 58,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "e6mlT",
+                      "name": "Work Center Label WC-03",
+                      "fill": "$pbi-ink",
+                      "content": "WC-03",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ij30O",
+                  "name": "Bar Pair WC-03",
+                  "width": 390,
+                  "height": 20,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "Ghn7B",
+                      "name": "Planned Bar WC-03",
+                      "fill": "$pbi-blue-soft",
+                      "width": 316,
+                      "height": 7
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "p4VOi5",
+                      "name": "Completed Bar WC-03",
+                      "fill": "$pbi-blue",
+                      "width": 282,
+                      "height": 7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TLL7k",
+                  "name": "Value Cell WC-03",
+                  "width": 100,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vGw06",
+                      "name": "Bar Values WC-03",
+                      "fill": "$pbi-muted",
+                      "content": "221 / 197",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 9,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XbmXm",
+              "x": 16,
+              "y": 151,
+              "name": "Work Center Row WC-04",
+              "width": 576,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tdxJV",
+                  "name": "Label Cell WC-04",
+                  "width": 58,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "P4k4d",
+                      "name": "Work Center Label WC-04",
+                      "fill": "$pbi-ink",
+                      "content": "WC-04",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "d431RQ",
+                  "name": "Bar Pair WC-04",
+                  "width": 390,
+                  "height": 20,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "PrIky",
+                      "name": "Planned Bar WC-04",
+                      "fill": "$pbi-blue-soft",
+                      "width": 276,
+                      "height": 7
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "mrRiG",
+                      "name": "Completed Bar WC-04",
+                      "fill": "$pbi-blue",
+                      "width": 240,
+                      "height": 7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "X2pkx",
+                  "name": "Value Cell WC-04",
+                  "width": 100,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "xqjxn",
+                      "name": "Bar Values WC-04",
+                      "fill": "$pbi-muted",
+                      "content": "193 / 168",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 9,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n0yUI",
+              "x": 16,
+              "y": 180,
+              "name": "Work Center Row WC-05",
+              "width": 576,
+              "height": 24,
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QXiBI",
+                  "name": "Label Cell WC-05",
+                  "width": 58,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "hc2mc",
+                      "name": "Work Center Label WC-05",
+                      "fill": "$pbi-ink",
+                      "content": "WC-05",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 10,
+                      "fontWeight": "600"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pcvQ2",
+                  "name": "Bar Pair WC-05",
+                  "width": 390,
+                  "height": 20,
+                  "layout": "vertical",
+                  "gap": 3,
+                  "justifyContent": "center",
+                  "children": [
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "DVTAH",
+                      "name": "Planned Bar WC-05",
+                      "fill": "$pbi-blue-soft",
+                      "width": 228,
+                      "height": 7
+                    },
+                    {
+                      "type": "rectangle",
+                      "cornerRadius": 2,
+                      "id": "YLrqi",
+                      "name": "Completed Bar WC-05",
+                      "fill": "$pbi-blue",
+                      "width": 190,
+                      "height": 7
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BHG1I",
+                  "name": "Value Cell WC-05",
+                  "width": 100,
+                  "height": 24,
+                  "layout": "vertical",
+                  "justifyContent": "center",
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zsPll",
+                      "name": "Bar Values WC-05",
+                      "fill": "$pbi-muted",
+                      "content": "160 / 133",
+                      "fontFamily": "$pbi-font",
+                      "fontSize": 9,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "E95yHF",
+          "x": 648,
+          "y": 280,
+          "name": "Visual · Completion Rate Trend",
+          "context": "Line chart showing maintenance completion rate by month for the last six months with a labeled 90 percent target.",
+          "width": 608,
+          "height": 224,
+          "fill": "$pbi-surface",
+          "cornerRadius": "$pbi-radius",
+          "stroke": "$pbi-line",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "eL4bv",
+              "x": 16,
+              "y": 14,
+              "name": "Line Chart Title",
+              "fill": "$pbi-ink",
+              "content": "Completion rate trend",
+              "fontFamily": "$pbi-font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "N5VBS",
+              "x": 16,
+              "y": 36,
+              "name": "Line Chart Subtitle",
+              "fill": "$pbi-muted",
+              "content": "Monthly completion rate · last 6 months",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "XHrD6",
+              "x": 16,
+              "y": 62,
+              "name": "Y Axis 100%",
+              "fill": "$pbi-muted",
+              "content": "100%",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "cNhca",
+              "x": 50,
+              "y": 68,
+              "name": "Gridline 100%",
+              "fill": "$pbi-line",
+              "width": 536,
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "drIhQ",
+              "x": 16,
+              "y": 98,
+              "name": "Y Axis 90%",
+              "fill": "$pbi-muted",
+              "content": "90%",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "BwTAY",
+              "x": 50,
+              "y": 104,
+              "name": "Gridline 90%",
+              "fill": "$pbi-line",
+              "width": 536,
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "YuaTK",
+              "x": 16,
+              "y": 134,
+              "name": "Y Axis 80%",
+              "fill": "$pbi-muted",
+              "content": "80%",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "txjUM",
+              "x": 50,
+              "y": 140,
+              "name": "Gridline 80%",
+              "fill": "$pbi-line",
+              "width": 536,
+              "height": 1
+            },
+            {
+              "type": "text",
+              "id": "Z06GKn",
+              "x": 16,
+              "y": 170,
+              "name": "Y Axis 70%",
+              "fill": "$pbi-muted",
+              "content": "70%",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "rectangle",
+              "id": "ouWHa",
+              "x": 50,
+              "y": 176,
+              "name": "Gridline 70%",
+              "fill": "$pbi-line",
+              "width": 536,
+              "height": 1
+            },
+            {
+              "type": "rectangle",
+              "id": "yTm3h",
+              "x": 50,
+              "y": 104,
+              "name": "Target Line",
+              "fill": "#DDA453",
+              "width": 536,
+              "height": 2
+            },
+            {
+              "type": "text",
+              "id": "TAQKT",
+              "x": 488,
+              "y": 88,
+              "name": "Target Line Label",
+              "fill": "$pbi-warn",
+              "content": "90% TARGET",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "600"
+            },
+            {
+              "type": "path",
+              "id": "Ditw3",
+              "x": 50,
+              "y": 68,
+              "name": "Completion Rate Series",
+              "geometry": "M0 86l107-10 107 5 108-24 107-16 107-10",
+              "viewBox": [
+                0,
+                0,
+                536,
+                108
+              ],
+              "fill": "#00000000",
+              "width": 536,
+              "height": 108,
+              "stroke": "$pbi-blue",
+              "strokeWidth": 3,
+              "strokeLinejoin": "round",
+              "strokeLinecap": "round"
+            },
+            {
+              "type": "ellipse",
+              "id": "MlA6W",
+              "x": 46,
+              "y": 150,
+              "name": "Trend Point Mar",
+              "fill": "$pbi-surface",
+              "width": 8,
+              "height": 8,
+              "stroke": "$pbi-blue",
+              "strokeWidth": 2
+            },
+            {
+              "type": "text",
+              "id": "sH9bC",
+              "x": 40,
+              "y": 190,
+              "name": "Month Label Mar",
+              "fill": "$pbi-muted",
+              "content": "Mar",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "ellipse",
+              "id": "e5LmB",
+              "x": 153,
+              "y": 140,
+              "name": "Trend Point Apr",
+              "fill": "$pbi-surface",
+              "width": 8,
+              "height": 8,
+              "stroke": "$pbi-blue",
+              "strokeWidth": 2
+            },
+            {
+              "type": "text",
+              "id": "znC10",
+              "x": 147,
+              "y": 190,
+              "name": "Month Label Apr",
+              "fill": "$pbi-muted",
+              "content": "Apr",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "ellipse",
+              "id": "levHM",
+              "x": 260,
+              "y": 145,
+              "name": "Trend Point May",
+              "fill": "$pbi-surface",
+              "width": 8,
+              "height": 8,
+              "stroke": "$pbi-blue",
+              "strokeWidth": 2
+            },
+            {
+              "type": "text",
+              "id": "mPfKP",
+              "x": 254,
+              "y": 190,
+              "name": "Month Label May",
+              "fill": "$pbi-muted",
+              "content": "May",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "ellipse",
+              "id": "T0lqH",
+              "x": 368,
+              "y": 121,
+              "name": "Trend Point Jun",
+              "fill": "$pbi-surface",
+              "width": 8,
+              "height": 8,
+              "stroke": "$pbi-blue",
+              "strokeWidth": 2
+            },
+            {
+              "type": "text",
+              "id": "R1PpD",
+              "x": 362,
+              "y": 190,
+              "name": "Month Label Jun",
+              "fill": "$pbi-muted",
+              "content": "Jun",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "ellipse",
+              "id": "lzk3j",
+              "x": 475,
+              "y": 105,
+              "name": "Trend Point Jul",
+              "fill": "$pbi-surface",
+              "width": 8,
+              "height": 8,
+              "stroke": "$pbi-blue",
+              "strokeWidth": 2
+            },
+            {
+              "type": "text",
+              "id": "J6XRD",
+              "x": 469,
+              "y": 190,
+              "name": "Month Label Jul",
+              "fill": "$pbi-muted",
+              "content": "Jul",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "ellipse",
+              "id": "Z3Zps",
+              "x": 582,
+              "y": 95,
+              "name": "Trend Point Aug",
+              "fill": "$pbi-surface",
+              "width": 8,
+              "height": 8,
+              "stroke": "$pbi-blue",
+              "strokeWidth": 2
+            },
+            {
+              "type": "text",
+              "id": "FhXju",
+              "x": 576,
+              "y": 190,
+              "name": "Month Label Aug",
+              "fill": "$pbi-muted",
+              "content": "Aug",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "U55Gk7",
+              "x": 532,
+              "y": 76,
+              "name": "Endpoint Label",
+              "width": 54,
+              "height": 22,
+              "fill": "$pbi-blue",
+              "cornerRadius": 11,
+              "layout": "vertical",
+              "justifyContent": "center",
+              "alignItems": "center"
+            },
+            {
+              "type": "text",
+              "id": "hOuE4",
+              "x": 0,
+              "y": 0,
+              "name": "Endpoint Value",
+              "fill": "#FFFFFF",
+              "content": "88.3%",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YRxLe",
+          "x": 24,
+          "y": 528,
+          "name": "Visual · Completion Rate by Maintenance Unit and Year",
+          "context": "Matrix comparing maintenance completion rate by maintenance unit and year, with drill-down from year to month.",
+          "width": 1232,
+          "height": 168,
+          "fill": "$pbi-surface",
+          "cornerRadius": "$pbi-radius",
+          "stroke": "$pbi-line",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "t0Fl4e",
+              "x": 16,
+              "y": 12,
+              "name": "Matrix Title",
+              "fill": "$pbi-ink",
+              "content": "Completion rate by maintenance unit and year",
+              "fontFamily": "$pbi-font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "yPQ60",
+              "x": 325,
+              "y": 15,
+              "name": "Matrix Subtitle",
+              "fill": "$pbi-muted",
+              "content": "Expand year → month in Power BI",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "icon",
+              "id": "p1rneP",
+              "x": 1192,
+              "y": 12,
+              "name": "Matrix Drill Icon",
+              "width": 18,
+              "height": 18,
+              "icon": "chevrons-down",
+              "library": "lucide",
+              "fill": "$pbi-blue"
+            },
+            {
+              "type": "frame",
+              "id": "zVVcp",
+              "x": 16,
+              "y": 42,
+              "name": "Matrix Table",
+              "width": 1200,
+              "height": 112,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PbG0q",
+                  "name": "Matrix Header Row",
+                  "width": "fill_container",
+                  "height": 28,
+                  "fill": "$pbi-blue-soft",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ou6Td",
+                      "name": "Matrix Header Cell MAINTENANCE UNIT",
+                      "width": 300,
+                      "height": 28,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "A7wD3r",
+                          "name": "Matrix Header MAINTENANCE UNIT",
+                          "fill": "$pbi-blue-dark",
+                          "content": "MAINTENANCE UNIT",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tNA9r",
+                      "name": "Matrix Header Cell 2024",
+                      "width": 190,
+                      "height": 28,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ymFDz",
+                          "name": "Matrix Header 2024",
+                          "fill": "$pbi-blue-dark",
+                          "content": "2024",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZIFbO",
+                      "name": "Matrix Header Cell 2025",
+                      "width": 190,
+                      "height": 28,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EHrnA",
+                          "name": "Matrix Header 2025",
+                          "fill": "$pbi-blue-dark",
+                          "content": "2025",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qQMLD",
+                      "name": "Matrix Header Cell 2026",
+                      "width": 190,
+                      "height": 28,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "tRKh3",
+                          "name": "Matrix Header 2026",
+                          "fill": "$pbi-blue-dark",
+                          "content": "2026",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c0qgMK",
+                      "name": "Matrix Header Cell CURRENT RATE",
+                      "width": 170,
+                      "height": 28,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "cF57j",
+                          "name": "Matrix Header CURRENT RATE",
+                          "fill": "$pbi-blue-dark",
+                          "content": "CURRENT RATE",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Gh8w9",
+                      "name": "Matrix Header Cell TARGET STATUS",
+                      "width": 160,
+                      "height": 28,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VWg58",
+                          "name": "Matrix Header TARGET STATUS",
+                          "fill": "$pbi-blue-dark",
+                          "content": "TARGET STATUS",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "600",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "wCF7t",
+                  "name": "Matrix Row MU-01 · Mechanical",
+                  "width": "fill_container",
+                  "height": 21,
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TCTGv",
+                      "name": "Matrix Cell MU-01 · Mechanical MU-01 · Mechanical",
+                      "width": 300,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hfXE4",
+                          "name": "Matrix Value MU-01 · Mechanical MU-01 · Mechanical",
+                          "fill": "$pbi-ink",
+                          "content": "MU-01 · Mechanical",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KqVXE",
+                      "name": "Matrix Cell MU-01 · Mechanical 84.2%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JJZKx",
+                          "name": "Matrix Value MU-01 · Mechanical 84.2%",
+                          "fill": "$pbi-ink",
+                          "content": "84.2%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g9Iw5",
+                      "name": "Matrix Cell MU-01 · Mechanical 87.5%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jCAlI",
+                          "name": "Matrix Value MU-01 · Mechanical 87.5%",
+                          "fill": "$pbi-ink",
+                          "content": "87.5%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i85BU",
+                      "name": "Matrix Cell MU-01 · Mechanical 91.4%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d4SwOJ",
+                          "name": "Matrix Value MU-01 · Mechanical 91.4%",
+                          "fill": "$pbi-ink",
+                          "content": "91.4%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T5zcFN",
+                      "name": "Matrix Cell MU-01 · Mechanical 91.4%",
+                      "width": 170,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "PoNwT",
+                          "name": "Matrix Value MU-01 · Mechanical 91.4%",
+                          "fill": "$pbi-ink",
+                          "content": "91.4%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "lsM9J",
+                      "name": "Status Cell MU-01 · Mechanical",
+                      "width": 160,
+                      "height": 21,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "ojHvB",
+                          "name": "Status Pill MU-01 · Mechanical",
+                          "width": 112,
+                          "height": 17,
+                          "fill": "$pbi-good",
+                          "cornerRadius": 9,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "q5RcJ",
+                              "name": "Status Label MU-01 · Mechanical",
+                              "fill": "#FFFFFF",
+                              "content": "✓ ON TARGET",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 8,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Tpln3",
+                  "name": "Matrix Row MU-02 · Electrical",
+                  "width": "fill_container",
+                  "height": 21,
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "hJF6z",
+                      "name": "Matrix Cell MU-02 · Electrical MU-02 · Electrical",
+                      "width": 300,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "yIYnQ",
+                          "name": "Matrix Value MU-02 · Electrical MU-02 · Electrical",
+                          "fill": "$pbi-ink",
+                          "content": "MU-02 · Electrical",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "B5iLYE",
+                      "name": "Matrix Cell MU-02 · Electrical 89.1%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "axTJa",
+                          "name": "Matrix Value MU-02 · Electrical 89.1%",
+                          "fill": "$pbi-ink",
+                          "content": "89.1%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "N2SUX",
+                      "name": "Matrix Cell MU-02 · Electrical 90.2%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "JFd4D",
+                          "name": "Matrix Value MU-02 · Electrical 90.2%",
+                          "fill": "$pbi-ink",
+                          "content": "90.2%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "C49z92",
+                      "name": "Matrix Cell MU-02 · Electrical 88.7%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LcH78",
+                          "name": "Matrix Value MU-02 · Electrical 88.7%",
+                          "fill": "$pbi-ink",
+                          "content": "88.7%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pyWT7",
+                      "name": "Matrix Cell MU-02 · Electrical 88.7%",
+                      "width": 170,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Js13j",
+                          "name": "Matrix Value MU-02 · Electrical 88.7%",
+                          "fill": "$pbi-ink",
+                          "content": "88.7%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "tZIlb",
+                      "name": "Status Cell MU-02 · Electrical",
+                      "width": 160,
+                      "height": 21,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "eX79V",
+                          "name": "Status Pill MU-02 · Electrical",
+                          "width": 112,
+                          "height": 17,
+                          "fill": "$pbi-warn",
+                          "cornerRadius": 9,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xYS1s",
+                              "name": "Status Label MU-02 · Electrical",
+                              "fill": "#FFFFFF",
+                              "content": "▲ WATCH",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 8,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "upM38",
+                  "name": "Matrix Row MU-03 · Instrumentation",
+                  "width": "fill_container",
+                  "height": 21,
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZCHlx",
+                      "name": "Matrix Cell MU-03 · Instrumentation MU-03 · Instrumentation",
+                      "width": 300,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vMkAd",
+                          "name": "Matrix Value MU-03 · Instrumentation MU-03 · Instrumentation",
+                          "fill": "$pbi-ink",
+                          "content": "MU-03 · Instrumentation",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KIJ6B",
+                      "name": "Matrix Cell MU-03 · Instrumentation 86.8%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "EPuD2",
+                          "name": "Matrix Value MU-03 · Instrumentation 86.8%",
+                          "fill": "$pbi-ink",
+                          "content": "86.8%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MJL8A",
+                      "name": "Matrix Cell MU-03 · Instrumentation 89.4%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Appyj",
+                          "name": "Matrix Value MU-03 · Instrumentation 89.4%",
+                          "fill": "$pbi-ink",
+                          "content": "89.4%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uVyKk",
+                      "name": "Matrix Cell MU-03 · Instrumentation 92.1%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "jnS4H",
+                          "name": "Matrix Value MU-03 · Instrumentation 92.1%",
+                          "fill": "$pbi-ink",
+                          "content": "92.1%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nC8uX",
+                      "name": "Matrix Cell MU-03 · Instrumentation 92.1%",
+                      "width": 170,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "D8g3S2",
+                          "name": "Matrix Value MU-03 · Instrumentation 92.1%",
+                          "fill": "$pbi-ink",
+                          "content": "92.1%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Wlrsf",
+                      "name": "Status Cell MU-03 · Instrumentation",
+                      "width": 160,
+                      "height": 21,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "U4A4U",
+                          "name": "Status Pill MU-03 · Instrumentation",
+                          "width": 112,
+                          "height": 17,
+                          "fill": "$pbi-good",
+                          "cornerRadius": 9,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "hsIyB",
+                              "name": "Status Label MU-03 · Instrumentation",
+                              "fill": "#FFFFFF",
+                              "content": "✓ ON TARGET",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 8,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tis80",
+                  "name": "Matrix Row MU-04 · Utilities",
+                  "width": "fill_container",
+                  "height": 21,
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "ZlQVK",
+                      "name": "Matrix Cell MU-04 · Utilities MU-04 · Utilities",
+                      "width": 300,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HqEqV",
+                          "name": "Matrix Value MU-04 · Utilities MU-04 · Utilities",
+                          "fill": "$pbi-ink",
+                          "content": "MU-04 · Utilities",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "R4C7MA",
+                      "name": "Matrix Cell MU-04 · Utilities 82.5%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "v7rYU",
+                          "name": "Matrix Value MU-04 · Utilities 82.5%",
+                          "fill": "$pbi-ink",
+                          "content": "82.5%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "oaO8H",
+                      "name": "Matrix Cell MU-04 · Utilities 85.6%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uKkiW",
+                          "name": "Matrix Value MU-04 · Utilities 85.6%",
+                          "fill": "$pbi-ink",
+                          "content": "85.6%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o4EB8S",
+                      "name": "Matrix Cell MU-04 · Utilities 80.9%",
+                      "width": 190,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aRXjE",
+                          "name": "Matrix Value MU-04 · Utilities 80.9%",
+                          "fill": "$pbi-ink",
+                          "content": "80.9%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Btn1a",
+                      "name": "Matrix Cell MU-04 · Utilities 80.9%",
+                      "width": 170,
+                      "height": 21,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        10
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UoQ2F",
+                          "name": "Matrix Value MU-04 · Utilities 80.9%",
+                          "fill": "$pbi-ink",
+                          "content": "80.9%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QEJ0g",
+                      "name": "Status Cell MU-04 · Utilities",
+                      "width": 160,
+                      "height": 21,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "hUKN1",
+                          "name": "Status Pill MU-04 · Utilities",
+                          "width": 112,
+                          "height": 17,
+                          "fill": "$pbi-bad",
+                          "cornerRadius": 9,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "g6yV1t",
+                              "name": "Status Label MU-04 · Utilities",
+                              "fill": "#FFFFFF",
+                              "content": "! BELOW TARGET",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 8,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "UzE4U",
+      "x": 1320,
+      "y": 300,
+      "name": "Power BI Page · Maintenance Detail",
+      "context": "Exploration page listing maintenance performance by equipment with overdue items first.",
+      "metadata": {
+        "type": "powerbi-page",
+        "pageName": "2.1 Chi tiết theo Thiết bị",
+        "shape": "exploration",
+        "canvas": "1280x720",
+        "drillthroughTarget": "Equipment Detail"
+      },
+      "clip": true,
+      "width": 1280,
+      "height": 720,
+      "fill": "$pbi-bg",
+      "layout": "none",
+      "children": [
+        {
+          "id": "W4V2za",
+          "type": "ref",
+          "ref": "cmYUG",
+          "name": "Header · Maintenance Detail",
+          "x": 0,
+          "y": 0,
+          "descendants": {
+            "nQmbI": {
+              "content": "Maintenance Detail"
+            },
+            "RRbZ4": {
+              "content": "Drill-through by equipment and work center"
+            },
+            "eQptV": {
+              "fill": "#D8ECFA"
+            },
+            "Xhw22": {
+              "fill": "#FFFFFF"
+            },
+            "rn7Xc": {
+              "x": 928,
+              "width": 133
+            }
+          }
+        },
+        {
+          "id": "K53tl7",
+          "type": "ref",
+          "ref": "iJax7",
+          "name": "Detail Slicer · WORK CENTER",
+          "x": 24,
+          "y": 80,
+          "width": 392,
+          "context": "Keyboard-navigable slicer. Selection cross-filters all page visuals.",
+          "descendants": {
+            "RgYiL": {
+              "content": "WORK CENTER"
+            },
+            "W7VUs": {
+              "content": "(All)"
+            },
+            "sTVjs": {
+              "x": 366
+            }
+          }
+        },
+        {
+          "id": "O9Sq1",
+          "type": "ref",
+          "ref": "iJax7",
+          "name": "Detail Slicer · MAINTENANCE UNIT",
+          "x": 432,
+          "y": 80,
+          "width": 392,
+          "context": "Keyboard-navigable slicer. Selection cross-filters all page visuals.",
+          "descendants": {
+            "RgYiL": {
+              "content": "MAINTENANCE UNIT"
+            },
+            "W7VUs": {
+              "content": "(All)"
+            },
+            "sTVjs": {
+              "x": 366
+            }
+          }
+        },
+        {
+          "id": "kIPEM",
+          "type": "ref",
+          "ref": "iJax7",
+          "name": "Detail Slicer · TIME",
+          "x": 840,
+          "y": 80,
+          "width": 392,
+          "context": "Keyboard-navigable slicer. Selection cross-filters all page visuals.",
+          "descendants": {
+            "RgYiL": {
+              "content": "TIME"
+            },
+            "W7VUs": {
+              "content": "Last 6 months"
+            },
+            "sTVjs": {
+              "x": 366
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "F8vfYh",
+          "x": 24,
+          "y": 152,
+          "name": "Drill-through Context Band",
+          "width": 1232,
+          "height": 52,
+          "fill": "$pbi-blue-soft",
+          "cornerRadius": "$pbi-radius",
+          "stroke": "#B9DDF4",
+          "strokeWidth": 1,
+          "gap": 12,
+          "padding": [
+            0,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon",
+              "id": "cevnL",
+              "name": "Drill-through Icon",
+              "width": 20,
+              "height": 20,
+              "icon": "funnel",
+              "library": "lucide",
+              "fill": "$pbi-blue-dark"
+            },
+            {
+              "type": "frame",
+              "id": "r4OrQ2",
+              "name": "Drill-through Message",
+              "width": "fill_container",
+              "height": 40,
+              "layout": "vertical",
+              "gap": 2,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "G8H3bd",
+                  "name": "Drill-through Context Title",
+                  "fill": "$pbi-blue-dark",
+                  "content": "Drill-through context",
+                  "fontFamily": "$pbi-font",
+                  "fontSize": 11,
+                  "fontWeight": "700"
+                },
+                {
+                  "type": "text",
+                  "id": "ZPLfd",
+                  "name": "Drill-through Context Description",
+                  "fill": "$pbi-ink",
+                  "content": "Equipment and Work Center filters carry from the overview; all table selections cross-filter.",
+                  "fontFamily": "$pbi-font",
+                  "fontSize": 10,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "A4ChhV",
+              "name": "Detail Sort Pill",
+              "width": 246,
+              "height": 28,
+              "fill": "$pbi-surface",
+              "cornerRadius": 14,
+              "stroke": "#B9DDF4",
+              "strokeWidth": 1,
+              "gap": 6,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon",
+                  "id": "FvJbM",
+                  "name": "Sort Icon",
+                  "width": 14,
+                  "height": 14,
+                  "icon": "arrow-down-wide-narrow",
+                  "library": "lucide",
+                  "fill": "$pbi-bad"
+                },
+                {
+                  "type": "text",
+                  "id": "j8rTKY",
+                  "name": "Sort Label",
+                  "fill": "$pbi-ink",
+                  "content": "SORT · OVERDUE FIRST",
+                  "fontFamily": "$pbi-font",
+                  "fontSize": 9,
+                  "fontWeight": "700",
+                  "letterSpacing": 0.3
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "b5FSF",
+          "x": 24,
+          "y": 228,
+          "name": "Visual · Maintenance Items by Equipment",
+          "context": "Table listing equipment, work center, planned items, completed items, completion rate, and maintenance status, sorted with overdue items first.",
+          "width": 1232,
+          "height": 468,
+          "fill": "$pbi-surface",
+          "cornerRadius": "$pbi-radius",
+          "stroke": "$pbi-line",
+          "strokeWidth": 1,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "gp7CT",
+              "x": 16,
+              "y": 14,
+              "name": "Detail Table Title",
+              "fill": "$pbi-ink",
+              "content": "Maintenance items by equipment",
+              "fontFamily": "$pbi-font",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "HCipz",
+              "x": 16,
+              "y": 35,
+              "name": "Detail Table Subtitle",
+              "fill": "$pbi-muted",
+              "content": "Precise values for operational follow-up · sorted by status and completion gap",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "YOQ9j",
+              "x": 1090,
+              "y": 19,
+              "name": "Detail Illustrative Note",
+              "fill": "$pbi-muted",
+              "content": "ILLUSTRATIVE VALUES",
+              "fontFamily": "$pbi-font",
+              "fontSize": 9,
+              "fontWeight": "600",
+              "letterSpacing": 0.3
+            },
+            {
+              "type": "frame",
+              "id": "c337Yn",
+              "x": 16,
+              "y": 58,
+              "name": "Equipment Detail Table",
+              "width": 1200,
+              "height": 384,
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "oC5eC",
+                  "name": "Equipment Table Header Row",
+                  "width": "fill_container",
+                  "height": 36,
+                  "fill": "$pbi-blue-soft",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "U8tzo",
+                      "name": "Equipment Header Cell EQUIPMENT",
+                      "width": 310,
+                      "height": 36,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NFynJ",
+                          "name": "Equipment Header EQUIPMENT",
+                          "fill": "$pbi-blue-dark",
+                          "content": "EQUIPMENT",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g8zKH8",
+                      "name": "Equipment Header Cell WORK CENTER",
+                      "width": 150,
+                      "height": 36,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n6u3wq",
+                          "name": "Equipment Header WORK CENTER",
+                          "fill": "$pbi-blue-dark",
+                          "content": "WORK CENTER",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "n7X5V2",
+                      "name": "Equipment Header Cell PLANNED",
+                      "width": 135,
+                      "height": 36,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "G88R8",
+                          "name": "Equipment Header PLANNED",
+                          "fill": "$pbi-blue-dark",
+                          "content": "PLANNED",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "weapT",
+                      "name": "Equipment Header Cell COMPLETED ON SCHEDULE",
+                      "width": 190,
+                      "height": 36,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kJDXn",
+                          "name": "Equipment Header COMPLETED ON SCHEDULE",
+                          "fill": "$pbi-blue-dark",
+                          "content": "COMPLETED ON SCHEDULE",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uAlCR",
+                      "name": "Equipment Header Cell COMPLETION RATE",
+                      "width": 190,
+                      "height": 36,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aI8qC",
+                          "name": "Equipment Header COMPLETION RATE",
+                          "fill": "$pbi-blue-dark",
+                          "content": "COMPLETION RATE",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ujP1s",
+                      "name": "Equipment Header Cell STATUS",
+                      "width": 225,
+                      "height": 36,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "h0YbDP",
+                          "name": "Equipment Header STATUS",
+                          "fill": "$pbi-blue-dark",
+                          "content": "STATUS",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 9,
+                          "fontWeight": "700",
+                          "letterSpacing": 0.3
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "mTQZp",
+                  "name": "Equipment Row EQ-1007 · Compressor C-101",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#FFF7F7",
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "EiIfO",
+                      "name": "Equipment Cell EQ-1007 · Compressor C-101 EQ-1007 · Compressor C-101",
+                      "width": 310,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "unnMd",
+                          "name": "Equipment Value EQ-1007 · Compressor C-101 EQ-1007 · Compressor C-101",
+                          "fill": "$pbi-ink",
+                          "content": "EQ-1007 · Compressor C-101",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dCqdS",
+                      "name": "Equipment Cell EQ-1007 · Compressor C-101 WC-01",
+                      "width": 150,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F3hQU",
+                          "name": "Equipment Value EQ-1007 · Compressor C-101 WC-01",
+                          "fill": "$pbi-ink",
+                          "content": "WC-01",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kikzW",
+                      "name": "Equipment Cell EQ-1007 · Compressor C-101 18",
+                      "width": 135,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NSuxl",
+                          "name": "Equipment Value EQ-1007 · Compressor C-101 18",
+                          "fill": "$pbi-ink",
+                          "content": "18",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a4REs",
+                      "name": "Equipment Cell EQ-1007 · Compressor C-101 12",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wGkHr",
+                          "name": "Equipment Value EQ-1007 · Compressor C-101 12",
+                          "fill": "$pbi-ink",
+                          "content": "12",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yqiEh",
+                      "name": "Rate Cell EQ-1007 · Compressor C-101",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "ybMjJ",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Track EQ-1007 · Compressor C-101",
+                          "fill": "$pbi-line",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "IBAcF",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Bar EQ-1007 · Compressor C-101",
+                          "fill": "$pbi-bad",
+                          "width": 105,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "WrSHu",
+                          "x": 126,
+                          "y": 12,
+                          "name": "Rate Value EQ-1007 · Compressor C-101",
+                          "fill": "$pbi-ink",
+                          "content": "66.7%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GFIxv",
+                      "name": "Equipment Status Cell EQ-1007 · Compressor C-101",
+                      "width": 225,
+                      "height": 48,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "Ms43V",
+                          "name": "Equipment Status Pill EQ-1007 · Compressor C-101",
+                          "width": 122,
+                          "height": 24,
+                          "fill": "$pbi-bad",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QvrfD",
+                              "name": "Equipment Status Label EQ-1007 · Compressor C-101",
+                              "fill": "#FFFFFF",
+                              "content": "! OVERDUE",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 9,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "E67gL",
+                  "name": "Equipment Row EQ-2042 · Pump P-204",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#FFF7F7",
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "rSixX",
+                      "name": "Equipment Cell EQ-2042 · Pump P-204 EQ-2042 · Pump P-204",
+                      "width": 310,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dNiSu",
+                          "name": "Equipment Value EQ-2042 · Pump P-204 EQ-2042 · Pump P-204",
+                          "fill": "$pbi-ink",
+                          "content": "EQ-2042 · Pump P-204",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JAmdF",
+                      "name": "Equipment Cell EQ-2042 · Pump P-204 WC-04",
+                      "width": 150,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "C0mFpB",
+                          "name": "Equipment Value EQ-2042 · Pump P-204 WC-04",
+                          "fill": "$pbi-ink",
+                          "content": "WC-04",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "PG9O3",
+                      "name": "Equipment Cell EQ-2042 · Pump P-204 14",
+                      "width": 135,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "spO7o",
+                          "name": "Equipment Value EQ-2042 · Pump P-204 14",
+                          "fill": "$pbi-ink",
+                          "content": "14",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "c6dhaJ",
+                      "name": "Equipment Cell EQ-2042 · Pump P-204 10",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lArPx",
+                          "name": "Equipment Value EQ-2042 · Pump P-204 10",
+                          "fill": "$pbi-ink",
+                          "content": "10",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "p80ix",
+                      "name": "Rate Cell EQ-2042 · Pump P-204",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "q5YyT",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Track EQ-2042 · Pump P-204",
+                          "fill": "$pbi-line",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "rFRTi",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Bar EQ-2042 · Pump P-204",
+                          "fill": "$pbi-bad",
+                          "width": 112,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "QrTds",
+                          "x": 126,
+                          "y": 12,
+                          "name": "Rate Value EQ-2042 · Pump P-204",
+                          "fill": "$pbi-ink",
+                          "content": "71.4%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yCXQD",
+                      "name": "Equipment Status Cell EQ-2042 · Pump P-204",
+                      "width": 225,
+                      "height": 48,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "QHkt2",
+                          "name": "Equipment Status Pill EQ-2042 · Pump P-204",
+                          "width": 122,
+                          "height": 24,
+                          "fill": "$pbi-bad",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "J5PSa",
+                              "name": "Equipment Status Label EQ-2042 · Pump P-204",
+                              "fill": "#FFFFFF",
+                              "content": "! OVERDUE",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 9,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hLOvx",
+                  "name": "Equipment Row EQ-3301 · Valve XV-3301",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "#FFFBF2",
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "HdDMH",
+                      "name": "Equipment Cell EQ-3301 · Valve XV-3301 EQ-3301 · Valve XV-3301",
+                      "width": 310,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uqDB8",
+                          "name": "Equipment Value EQ-3301 · Valve XV-3301 EQ-3301 · Valve XV-3301",
+                          "fill": "$pbi-ink",
+                          "content": "EQ-3301 · Valve XV-3301",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ibuUk",
+                      "name": "Equipment Cell EQ-3301 · Valve XV-3301 WC-02",
+                      "width": 150,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "R1vSe",
+                          "name": "Equipment Value EQ-3301 · Valve XV-3301 WC-02",
+                          "fill": "$pbi-ink",
+                          "content": "WC-02",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "H6eSZn",
+                      "name": "Equipment Cell EQ-3301 · Valve XV-3301 11",
+                      "width": 135,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "S78IZS",
+                          "name": "Equipment Value EQ-3301 · Valve XV-3301 11",
+                          "fill": "$pbi-ink",
+                          "content": "11",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mptDi",
+                      "name": "Equipment Cell EQ-3301 · Valve XV-3301 9",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "RAR4i",
+                          "name": "Equipment Value EQ-3301 · Valve XV-3301 9",
+                          "fill": "$pbi-ink",
+                          "content": "9",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vvELW",
+                      "name": "Rate Cell EQ-3301 · Valve XV-3301",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "Cdo4f",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Track EQ-3301 · Valve XV-3301",
+                          "fill": "$pbi-line",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "oKj7P",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Bar EQ-3301 · Valve XV-3301",
+                          "fill": "$pbi-warn",
+                          "width": 128,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "OtB3z",
+                          "x": 126,
+                          "y": 12,
+                          "name": "Rate Value EQ-3301 · Valve XV-3301",
+                          "fill": "$pbi-ink",
+                          "content": "81.8%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "C7GMT",
+                      "name": "Equipment Status Cell EQ-3301 · Valve XV-3301",
+                      "width": 225,
+                      "height": 48,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "C70Cz1",
+                          "name": "Equipment Status Pill EQ-3301 · Valve XV-3301",
+                          "width": 122,
+                          "height": 24,
+                          "fill": "$pbi-warn",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "oUqDs",
+                              "name": "Equipment Status Label EQ-3301 · Valve XV-3301",
+                              "fill": "#FFFFFF",
+                              "content": "▲ AT RISK",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 9,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yN2fE",
+                  "name": "Equipment Row EQ-1103 · Motor M-1103",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "$pbi-surface",
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "pgIlq",
+                      "name": "Equipment Cell EQ-1103 · Motor M-1103 EQ-1103 · Motor M-1103",
+                      "width": 310,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Vs3pv",
+                          "name": "Equipment Value EQ-1103 · Motor M-1103 EQ-1103 · Motor M-1103",
+                          "fill": "$pbi-ink",
+                          "content": "EQ-1103 · Motor M-1103",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KNmBj",
+                      "name": "Equipment Cell EQ-1103 · Motor M-1103 WC-03",
+                      "width": 150,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UDYqH",
+                          "name": "Equipment Value EQ-1103 · Motor M-1103 WC-03",
+                          "fill": "$pbi-ink",
+                          "content": "WC-03",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MDc5f",
+                      "name": "Equipment Cell EQ-1103 · Motor M-1103 16",
+                      "width": 135,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pQR3o",
+                          "name": "Equipment Value EQ-1103 · Motor M-1103 16",
+                          "fill": "$pbi-ink",
+                          "content": "16",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "x0VIN",
+                      "name": "Equipment Cell EQ-1103 · Motor M-1103 15",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uHIDg",
+                          "name": "Equipment Value EQ-1103 · Motor M-1103 15",
+                          "fill": "$pbi-ink",
+                          "content": "15",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "C52FYU",
+                      "name": "Rate Cell EQ-1103 · Motor M-1103",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "p6Dor",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Track EQ-1103 · Motor M-1103",
+                          "fill": "$pbi-line",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "usDcJ",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Bar EQ-1103 · Motor M-1103",
+                          "fill": "$pbi-good",
+                          "width": 147,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "W0CWO6",
+                          "x": 126,
+                          "y": 12,
+                          "name": "Rate Value EQ-1103 · Motor M-1103",
+                          "fill": "$pbi-ink",
+                          "content": "93.8%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "I1EBp",
+                      "name": "Equipment Status Cell EQ-1103 · Motor M-1103",
+                      "width": 225,
+                      "height": 48,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "J0SQEV",
+                          "name": "Equipment Status Pill EQ-1103 · Motor M-1103",
+                          "width": 122,
+                          "height": 24,
+                          "fill": "$pbi-good",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "TzH9g",
+                              "name": "Equipment Status Label EQ-1103 · Motor M-1103",
+                              "fill": "#FFFFFF",
+                              "content": "✓ COMPLETED",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 9,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hOobh",
+                  "name": "Equipment Row EQ-2208 · Exchanger E-2208",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "$pbi-surface",
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "FQJz3",
+                      "name": "Equipment Cell EQ-2208 · Exchanger E-2208 EQ-2208 · Exchanger E-2208",
+                      "width": 310,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Y05BXn",
+                          "name": "Equipment Value EQ-2208 · Exchanger E-2208 EQ-2208 · Exchanger E-2208",
+                          "fill": "$pbi-ink",
+                          "content": "EQ-2208 · Exchanger E-2208",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IiY1F",
+                      "name": "Equipment Cell EQ-2208 · Exchanger E-2208 WC-01",
+                      "width": 150,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "d1Nyd",
+                          "name": "Equipment Value EQ-2208 · Exchanger E-2208 WC-01",
+                          "fill": "$pbi-ink",
+                          "content": "WC-01",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "elvEr",
+                      "name": "Equipment Cell EQ-2208 · Exchanger E-2208 13",
+                      "width": 135,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VZi0s",
+                          "name": "Equipment Value EQ-2208 · Exchanger E-2208 13",
+                          "fill": "$pbi-ink",
+                          "content": "13",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "JHdZe",
+                      "name": "Equipment Cell EQ-2208 · Exchanger E-2208 12",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "IvM1V",
+                          "name": "Equipment Value EQ-2208 · Exchanger E-2208 12",
+                          "fill": "$pbi-ink",
+                          "content": "12",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZBCBI",
+                      "name": "Rate Cell EQ-2208 · Exchanger E-2208",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "W44FQN",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Track EQ-2208 · Exchanger E-2208",
+                          "fill": "$pbi-line",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "RWRUy",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Bar EQ-2208 · Exchanger E-2208",
+                          "fill": "$pbi-good",
+                          "width": 145,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "VOl0N",
+                          "x": 126,
+                          "y": 12,
+                          "name": "Rate Value EQ-2208 · Exchanger E-2208",
+                          "fill": "$pbi-ink",
+                          "content": "92.3%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "DIGKi",
+                      "name": "Equipment Status Cell EQ-2208 · Exchanger E-2208",
+                      "width": 225,
+                      "height": 48,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "zFBX4",
+                          "name": "Equipment Status Pill EQ-2208 · Exchanger E-2208",
+                          "width": 122,
+                          "height": 24,
+                          "fill": "$pbi-good",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "rg2ks",
+                              "name": "Equipment Status Label EQ-2208 · Exchanger E-2208",
+                              "fill": "#FFFFFF",
+                              "content": "✓ COMPLETED",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 9,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XFm4j",
+                  "name": "Equipment Row EQ-4105 · Fan F-4105",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "$pbi-surface",
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "r3WvB",
+                      "name": "Equipment Cell EQ-4105 · Fan F-4105 EQ-4105 · Fan F-4105",
+                      "width": 310,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SkAmG",
+                          "name": "Equipment Value EQ-4105 · Fan F-4105 EQ-4105 · Fan F-4105",
+                          "fill": "$pbi-ink",
+                          "content": "EQ-4105 · Fan F-4105",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "h9HSYd",
+                      "name": "Equipment Cell EQ-4105 · Fan F-4105 WC-05",
+                      "width": 150,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HAOJ9",
+                          "name": "Equipment Value EQ-4105 · Fan F-4105 WC-05",
+                          "fill": "$pbi-ink",
+                          "content": "WC-05",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kGTYG",
+                      "name": "Equipment Cell EQ-4105 · Fan F-4105 10",
+                      "width": 135,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rJZ3c",
+                          "name": "Equipment Value EQ-4105 · Fan F-4105 10",
+                          "fill": "$pbi-ink",
+                          "content": "10",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RbLsj",
+                      "name": "Equipment Cell EQ-4105 · Fan F-4105 9",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n2GHA",
+                          "name": "Equipment Value EQ-4105 · Fan F-4105 9",
+                          "fill": "$pbi-ink",
+                          "content": "9",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OajzN",
+                      "name": "Rate Cell EQ-4105 · Fan F-4105",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "otBMp",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Track EQ-4105 · Fan F-4105",
+                          "fill": "$pbi-line",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "DbJ8h",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Bar EQ-4105 · Fan F-4105",
+                          "fill": "$pbi-good",
+                          "width": 141,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "Cy09A",
+                          "x": 126,
+                          "y": 12,
+                          "name": "Rate Value EQ-4105 · Fan F-4105",
+                          "fill": "$pbi-ink",
+                          "content": "90.0%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "y5LefM",
+                      "name": "Equipment Status Cell EQ-4105 · Fan F-4105",
+                      "width": 225,
+                      "height": 48,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YPfQd",
+                          "name": "Equipment Status Pill EQ-4105 · Fan F-4105",
+                          "width": 122,
+                          "height": 24,
+                          "fill": "$pbi-good",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "IT32P",
+                              "name": "Equipment Status Label EQ-4105 · Fan F-4105",
+                              "fill": "#FFFFFF",
+                              "content": "✓ ON TARGET",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 9,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uLoBw",
+                  "name": "Equipment Row EQ-5012 · Boiler B-5012",
+                  "width": "fill_container",
+                  "height": 48,
+                  "fill": "$pbi-surface",
+                  "stroke": "$pbi-line",
+                  "strokeWidth": {
+                    "bottom": 1
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "K7GAI",
+                      "name": "Equipment Cell EQ-5012 · Boiler B-5012 EQ-5012 · Boiler B-5012",
+                      "width": 310,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "hetPJ",
+                          "name": "Equipment Value EQ-5012 · Boiler B-5012 EQ-5012 · Boiler B-5012",
+                          "fill": "$pbi-ink",
+                          "content": "EQ-5012 · Boiler B-5012",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "a09yli",
+                      "name": "Equipment Cell EQ-5012 · Boiler B-5012 WC-02",
+                      "width": 150,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "uALOc",
+                          "name": "Equipment Value EQ-5012 · Boiler B-5012 WC-02",
+                          "fill": "$pbi-ink",
+                          "content": "WC-02",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "g98f7r",
+                      "name": "Equipment Cell EQ-5012 · Boiler B-5012 8",
+                      "width": 135,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "NNeqd",
+                          "name": "Equipment Value EQ-5012 · Boiler B-5012 8",
+                          "fill": "$pbi-ink",
+                          "content": "8",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vanm7",
+                      "name": "Equipment Cell EQ-5012 · Boiler B-5012 8",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "vertical",
+                      "padding": [
+                        0,
+                        12
+                      ],
+                      "justifyContent": "center",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "F0Ig3",
+                          "name": "Equipment Value EQ-5012 · Boiler B-5012 8",
+                          "fill": "$pbi-ink",
+                          "content": "8",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eSI3I",
+                      "name": "Rate Cell EQ-5012 · Boiler B-5012",
+                      "width": 190,
+                      "height": 48,
+                      "layout": "none",
+                      "children": [
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "h60lTD",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Track EQ-5012 · Boiler B-5012",
+                          "fill": "$pbi-line",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "rectangle",
+                          "cornerRadius": 2,
+                          "id": "aRJhl",
+                          "x": 21,
+                          "y": 34,
+                          "name": "Rate Bar EQ-5012 · Boiler B-5012",
+                          "fill": "$pbi-good",
+                          "width": 157,
+                          "height": 4
+                        },
+                        {
+                          "type": "text",
+                          "id": "k2sYXj",
+                          "x": 126,
+                          "y": 12,
+                          "name": "Rate Value EQ-5012 · Boiler B-5012",
+                          "fill": "$pbi-ink",
+                          "content": "100.0%",
+                          "fontFamily": "$pbi-font",
+                          "fontSize": 10,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "E9hEv",
+                      "name": "Equipment Status Cell EQ-5012 · Boiler B-5012",
+                      "width": 225,
+                      "height": 48,
+                      "layout": "vertical",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "SLVFu",
+                          "name": "Equipment Status Pill EQ-5012 · Boiler B-5012",
+                          "width": 122,
+                          "height": 24,
+                          "fill": "$pbi-good",
+                          "cornerRadius": 12,
+                          "layout": "vertical",
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "thgbZ",
+                              "name": "Equipment Status Label EQ-5012 · Boiler B-5012",
+                              "fill": "#FFFFFF",
+                              "content": "✓ COMPLETED",
+                              "fontFamily": "$pbi-font",
+                              "fontSize": 9,
+                              "fontWeight": "700"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "cmYUG",
+      "x": 0,
+      "y": 0,
+      "name": "Component · PVCFC Report Header",
+      "reusable": true,
+      "width": 1280,
+      "height": 64,
+      "fill": "$pbi-blue",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "RbFt5",
+          "x": 24,
+          "y": 14,
+          "name": "Logo · PVCFC",
+          "width": 58,
+          "height": 36,
+          "fill": "$pbi-surface",
+          "cornerRadius": 4,
+          "layout": "vertical",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "SkeIi",
+              "name": "Logo Wordmark",
+              "fill": "$pbi-blue-dark",
+              "content": "PVCFC",
+              "fontFamily": "$pbi-font",
+              "fontSize": 12,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "id": "nQmbI",
+          "x": 96,
+          "y": 10,
+          "name": "Report Page Title",
+          "fill": "#FFFFFF",
+          "content": "Maintenance Completion",
+          "fontFamily": "$pbi-font",
+          "fontSize": 20,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "RRbZ4",
+          "x": 96,
+          "y": 37,
+          "name": "Report Page Subtitle",
+          "fill": "#D8ECFA",
+          "content": "Scheduled maintenance planning and execution",
+          "fontFamily": "$pbi-font",
+          "fontSize": 11,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "text",
+          "id": "eQptV",
+          "x": 832,
+          "y": 24,
+          "name": "Navigation Overview",
+          "fill": "#FFFFFF",
+          "content": "OVERVIEW",
+          "fontFamily": "$pbi-font",
+          "fontSize": 11,
+          "fontWeight": "600"
+        },
+        {
+          "type": "text",
+          "id": "Xhw22",
+          "x": 930,
+          "y": 24,
+          "name": "Navigation Detail",
+          "fill": "#D8ECFA",
+          "content": "MAINTENANCE DETAIL",
+          "fontFamily": "$pbi-font",
+          "fontSize": 11,
+          "fontWeight": "600"
+        },
+        {
+          "type": "rectangle",
+          "cornerRadius": 2,
+          "id": "rn7Xc",
+          "x": 830,
+          "y": 58,
+          "name": "Active Navigation Indicator",
+          "fill": "#FFFFFF",
+          "width": 78,
+          "height": 3
+        },
+        {
+          "type": "frame",
+          "id": "cpdmu",
+          "x": 1112,
+          "y": 18,
+          "name": "Sensitivity Badge",
+          "width": 144,
+          "height": 28,
+          "fill": "#FFFFFF1F",
+          "cornerRadius": 14,
+          "stroke": "#FFFFFF55",
+          "strokeWidth": 1,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "nVev9",
+              "name": "Sensitivity Label",
+              "fill": "#FFFFFF",
+              "content": "INTERNAL · DAILY",
+              "fontFamily": "$pbi-font",
+              "fontSize": 10,
+              "fontWeight": "600"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "iJax7",
+      "x": 1320,
+      "y": 0,
+      "name": "Component · Report Slicer",
+      "reusable": true,
+      "width": 296,
+      "height": 48,
+      "fill": "$pbi-surface",
+      "cornerRadius": "$pbi-radius",
+      "stroke": "$pbi-line",
+      "strokeWidth": 1,
+      "layout": "none",
+      "children": [
+        {
+          "type": "text",
+          "id": "RgYiL",
+          "x": 12,
+          "y": 7,
+          "name": "Slicer Label",
+          "fill": "$pbi-muted",
+          "content": "WORK CENTER",
+          "fontFamily": "$pbi-font",
+          "fontSize": 9,
+          "fontWeight": "600",
+          "letterSpacing": 0.4
+        },
+        {
+          "type": "text",
+          "id": "W7VUs",
+          "x": 12,
+          "y": 23,
+          "name": "Slicer Value",
+          "fill": "$pbi-ink",
+          "content": "(All)",
+          "fontFamily": "$pbi-font",
+          "fontSize": 12,
+          "fontWeight": "600"
+        },
+        {
+          "type": "icon",
+          "id": "sTVjs",
+          "x": 270,
+          "y": 17,
+          "name": "Slicer Chevron",
+          "width": 16,
+          "height": 16,
+          "icon": "chevron-down",
+          "library": "lucide",
+          "fill": "$pbi-muted"
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "SvAbj",
+      "x": 1640,
+      "y": 0,
+      "name": "Component · KPI Card",
+      "reusable": true,
+      "width": 296,
+      "height": 104,
+      "fill": "$pbi-surface",
+      "cornerRadius": "$pbi-radius",
+      "stroke": "$pbi-line",
+      "strokeWidth": 1,
+      "layout": "none",
+      "children": [
+        {
+          "type": "rectangle",
+          "cornerRadius": [
+            6,
+            0,
+            0,
+            6
+          ],
+          "id": "z17Yv",
+          "x": 0,
+          "y": 0,
+          "name": "KPI Accent",
+          "fill": "$pbi-blue",
+          "width": 4,
+          "height": 104
+        },
+        {
+          "type": "text",
+          "id": "PoglJ",
+          "x": 16,
+          "y": 13,
+          "name": "KPI Label",
+          "fill": "$pbi-muted",
+          "content": "METRIC",
+          "fontFamily": "$pbi-font",
+          "fontSize": 10,
+          "fontWeight": "600",
+          "letterSpacing": 0.3
+        },
+        {
+          "type": "text",
+          "id": "KUP4k",
+          "x": 16,
+          "y": 34,
+          "name": "KPI Value",
+          "fill": "$pbi-ink",
+          "content": "—",
+          "fontFamily": "$pbi-font",
+          "fontSize": 27,
+          "fontWeight": "700"
+        },
+        {
+          "type": "text",
+          "id": "SuM0q",
+          "x": 16,
+          "y": 75,
+          "name": "KPI Comparison",
+          "fill": "$pbi-muted",
+          "content": "Previous 6 months · —",
+          "fontFamily": "$pbi-font",
+          "fontSize": 10,
+          "fontWeight": "normal"
+        },
+        {
+          "type": "icon",
+          "id": "uMmjk",
+          "x": 252,
+          "y": 16,
+          "name": "KPI Icon",
+          "width": 24,
+          "height": 24,
+          "icon": "clipboard-check",
+          "library": "lucide",
+          "fill": "$pbi-blue"
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "color.background": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.foreground": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "color.accent": {
+      "type": "color",
+      "value": "#118DFF"
+    },
+    "page-bg": {
+      "type": "color",
+      "value": "#F4F7FB"
+    },
+    "surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "primary": {
+      "type": "color",
+      "value": "#0078D4"
+    },
+    "primary-dark": {
+      "type": "color",
+      "value": "#0B3558"
+    },
+    "primary-soft": {
+      "type": "color",
+      "value": "#E8F3FB"
+    },
+    "ink": {
+      "type": "color",
+      "value": "#172B3A"
+    },
+    "muted": {
+      "type": "color",
+      "value": "#5B7083"
+    },
+    "border": {
+      "type": "color",
+      "value": "#D8E2EA"
+    },
+    "warning": {
+      "type": "color",
+      "value": "#C65D00"
+    },
+    "warning-soft": {
+      "type": "color",
+      "value": "#FFF1E5"
+    },
+    "good": {
+      "type": "color",
+      "value": "#16735A"
+    },
+    "good-soft": {
+      "type": "color",
+      "value": "#E6F4EF"
+    },
+    "font": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "gap": {
+      "type": "number",
+      "value": 16
+    },
+    "radius": {
+      "type": "number",
+      "value": 6
+    },
+    "pbi-bg": {
+      "type": "color",
+      "value": "#F3F6F9"
+    },
+    "pbi-surface": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "pbi-blue": {
+      "type": "color",
+      "value": "#0B78C8"
+    },
+    "pbi-blue-dark": {
+      "type": "color",
+      "value": "#07558F"
+    },
+    "pbi-blue-soft": {
+      "type": "color",
+      "value": "#DCEFFC"
+    },
+    "pbi-ink": {
+      "type": "color",
+      "value": "#172333"
+    },
+    "pbi-muted": {
+      "type": "color",
+      "value": "#66788A"
+    },
+    "pbi-line": {
+      "type": "color",
+      "value": "#D9E2EA"
+    },
+    "pbi-good": {
+      "type": "color",
+      "value": "#16856B"
+    },
+    "pbi-warn": {
+      "type": "color",
+      "value": "#C77B13"
+    },
+    "pbi-bad": {
+      "type": "color",
+      "value": "#C74C4C"
+    },
+    "pbi-radius": {
+      "type": "number",
+      "value": 6
+    },
+    "pbi-gap": {
+      "type": "number",
+      "value": 16
+    },
+    "pbi-font": {
+      "type": "string",
+      "value": "Inter"
+    }
+  },
+  "fileToken": "60f6ee35-d664-4d02-aac7-820989ff9d76"
+}

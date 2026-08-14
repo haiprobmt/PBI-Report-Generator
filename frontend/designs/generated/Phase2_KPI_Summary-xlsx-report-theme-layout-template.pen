@@ -1,0 +1,536 @@
+{
+  "version": "2.14",
+  "variables": {
+    "color.background": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "color.foreground": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "color.accent": {
+      "type": "color",
+      "value": "#118DFF"
+    }
+  },
+  "children": [
+    {
+      "id": "power-bi-report-page",
+      "type": "frame",
+      "name": "Phase2_KPI_Summary.xlsx, report theme layout template · Báo cáo quản lý sản xuất và vận hành nhà máy PVCFC (Phân bón Dầu khí Cà Mau)",
+      "context": "Được tạo từ kiến thức nguồn đã tải lên, Tóm tắt yêu cầu đã phân tích và bố cục báo cáo đã chọn.",
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 770,
+      "fill": "#FFFFFF",
+      "layout": "none",
+      "children": [
+        {
+          "id": "report-header",
+          "type": "frame",
+          "name": "Report Header",
+          "x": 0,
+          "y": 0,
+          "width": 1280,
+          "height": 60,
+          "fill": "#FFFFFF",
+          "layout": "none",
+          "children": [
+            {
+              "id": "report-title",
+              "type": "text",
+              "content": "Report Title",
+              "x": 24,
+              "y": 17,
+              "width": 1232,
+              "height": 36,
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fill": "#FFFFFF"
+            }
+          ]
+        },
+        {
+          "id": "slicer-1",
+          "type": "frame",
+          "name": "Slicer · Date",
+          "x": 320,
+          "y": 80,
+          "width": 200,
+          "height": 50,
+          "fill": "#F8FAFC",
+          "stroke": {
+            "fill": "#CBD5E1",
+            "thickness": 1
+          },
+          "cornerRadius": 6,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-slicer",
+            "field": ""
+          },
+          "children": [
+            {
+              "id": "slicer-label-1",
+              "type": "text",
+              "content": "Date",
+              "x": 12,
+              "y": 12,
+              "width": 176,
+              "height": 18,
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fill": "#000000"
+            }
+          ]
+        },
+        {
+          "id": "slicer-2",
+          "type": "frame",
+          "name": "Slicer · Filter 2",
+          "x": 540,
+          "y": 80,
+          "width": 200,
+          "height": 50,
+          "fill": "#F8FAFC",
+          "stroke": {
+            "fill": "#CBD5E1",
+            "thickness": 1
+          },
+          "cornerRadius": 6,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-slicer",
+            "field": ""
+          },
+          "children": [
+            {
+              "id": "slicer-label-2",
+              "type": "text",
+              "content": "Filter 2",
+              "x": 12,
+              "y": 12,
+              "width": 176,
+              "height": 18,
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fill": "#000000"
+            }
+          ]
+        },
+        {
+          "id": "slicer-3",
+          "type": "frame",
+          "name": "Slicer · Filter 3",
+          "x": 760,
+          "y": 80,
+          "width": 200,
+          "height": 50,
+          "fill": "#F8FAFC",
+          "stroke": {
+            "fill": "#CBD5E1",
+            "thickness": 1
+          },
+          "cornerRadius": 6,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-slicer",
+            "field": ""
+          },
+          "children": [
+            {
+              "id": "slicer-label-3",
+              "type": "text",
+              "content": "Filter 3",
+              "x": 12,
+              "y": 12,
+              "width": 176,
+              "height": 18,
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fill": "#000000"
+            }
+          ]
+        },
+        {
+          "id": "visual-1",
+          "type": "frame",
+          "name": "card · Card KPIs tổng quan (Số KPI, Số KPI đạt, Số KPI chưa đạt)",
+          "x": 20,
+          "y": 150,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "card",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-1",
+              "type": "text",
+              "content": "Card KPIs tổng quan (Số KPI, Số KPI đạt, Số KPI chưa đạt)",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-1",
+              "type": "text",
+              "content": "CARD · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        },
+        {
+          "id": "visual-2",
+          "type": "frame",
+          "name": "bar · Bar chart so sánh tổng KPI theo phân hệ",
+          "x": 426.6666666666667,
+          "y": 150,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "bar",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-2",
+              "type": "text",
+              "content": "Bar chart so sánh tổng KPI theo phân hệ",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-2",
+              "type": "text",
+              "content": "BAR · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        },
+        {
+          "id": "visual-3",
+          "type": "frame",
+          "name": "line · Donut chart thể hiện tỷ lệ trạng thái KPI (Đã có PBI, Đã có BC khác, Tạo mới)",
+          "x": 833.3333333333334,
+          "y": 150,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "line",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-3",
+              "type": "text",
+              "content": "Donut chart thể hiện tỷ lệ trạng thái KPI (Đã có PBI, Đã có BC khác, Tạo mới)",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-3",
+              "type": "text",
+              "content": "LINE · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        },
+        {
+          "id": "visual-4",
+          "type": "frame",
+          "name": "pie · Line chart xu hướng hoàn thành bảo dưỡng theo tháng",
+          "x": 20,
+          "y": 350,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "pie",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-4",
+              "type": "text",
+              "content": "Line chart xu hướng hoàn thành bảo dưỡng theo tháng",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-4",
+              "type": "text",
+              "content": "PIE · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        },
+        {
+          "id": "visual-5",
+          "type": "frame",
+          "name": "table · KPI card phụ: Tỷ lệ hoàn thành BDĐK, Tỷ lệ đạt chất lượng, Số sự cố HSE, Tỷ lệ tồn kho",
+          "x": 426.6666666666667,
+          "y": 350,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "table",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-5",
+              "type": "text",
+              "content": "KPI card phụ: Tỷ lệ hoàn thành BDĐK, Tỷ lệ đạt chất lượng, Số sự cố HSE, Tỷ lệ tồn kho",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-5",
+              "type": "text",
+              "content": "TABLE · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        },
+        {
+          "id": "visual-6",
+          "type": "frame",
+          "name": "card · Matrix xếp hạng các đơn vị có rủi ro cao về HSE",
+          "x": 833.3333333333334,
+          "y": 350,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "card",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-6",
+              "type": "text",
+              "content": "Matrix xếp hạng các đơn vị có rủi ro cao về HSE",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-6",
+              "type": "text",
+              "content": "CARD · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        },
+        {
+          "id": "visual-7",
+          "type": "frame",
+          "name": "bar · Scatter plot so sánh mức độ ưu tiên và độ khó của KPI",
+          "x": 20,
+          "y": 550,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "bar",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-7",
+              "type": "text",
+              "content": "Scatter plot so sánh mức độ ưu tiên và độ khó của KPI",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-7",
+              "type": "text",
+              "content": "BAR · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        },
+        {
+          "id": "visual-8",
+          "type": "frame",
+          "name": "line · Table chi tiết các KPI cần tạo mới",
+          "x": 426.6666666666667,
+          "y": 550,
+          "width": 386.6666666666667,
+          "height": 180,
+          "fill": "#FFFFFF",
+          "stroke": {
+            "fill": "#D8DEE9",
+            "thickness": 1
+          },
+          "cornerRadius": 8,
+          "layout": "none",
+          "metadata": {
+            "type": "power-bi-visual",
+            "visualType": "line",
+            "dataFields": []
+          },
+          "children": [
+            {
+              "id": "visual-title-8",
+              "type": "text",
+              "content": "Table chi tiết các KPI cần tạo mới",
+              "x": 14,
+              "y": 12,
+              "width": 358.6666666666667,
+              "height": 21,
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fill": "#000000"
+            },
+            {
+              "id": "visual-type-8",
+              "type": "text",
+              "content": "LINE · chờ liên kết trường",
+              "x": 14,
+              "y": 38,
+              "width": 358.6666666666667,
+              "height": 15,
+              "fontFamily": "Inter",
+              "fontSize": 10,
+              "fill": "#118DFF"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
