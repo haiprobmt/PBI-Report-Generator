@@ -10,6 +10,8 @@ The initial profile is deliberately tool-free. It supports source analysis, requ
 - Linux x64, Linux arm64, or macOS arm64 supported by the published Harness runtime
 - `DEEPSEEK_API_KEY`
 
+DeepSeek Harness is currently a developer preview without a tagged GitHub release. The sidecar is therefore an opt-in integration boundary. Confirm that the pinned SDK wheel is available for the target platform before enabling `AI_RUNTIME_MODE=harness`; the default direct runtime remains fully supported.
+
 ## Install and run
 
 ```bash
