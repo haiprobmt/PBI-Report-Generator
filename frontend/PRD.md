@@ -53,12 +53,17 @@ An intelligent web application that automates Power BI report generation from se
 - **Progression**: Theme selected → Preview renders with sample visualizations → User evaluates → Makes theme adjustments if needed
 - **Success criteria**: Preview accurately represents Power BI rendering, updates in real-time with theme changes
 
-### AI Report Generation
-- **Functionality**: Agent analyzes semantic model, requirements, theme, and layout to generate complete Power BI report file
-- **Purpose**: Automates the tedious process of report creation with AI-driven intelligence
-- **Trigger**: User clicks "Generate Report" button
-- **Progression**: Click generate → AI initializes → Progress steps stream in real-time → Analysis phases complete → Report file created → Success notification
-- **Success criteria**: Generation completes successfully, progress is transparent, report file is created as .pbix format
+### Agent Build Package Generation
+- **Functionality**: Packages source evidence, requirements, theme, approved `.pen` layout, and Power BI authoring instructions for a build agent
+- **Purpose**: Creates a grounded, repeatable handoff for PBIP generation while the automated Windows build worker is being developed
+- **Trigger**: User approves the Codex-refined pen.dev layout and selects export
+- **Progression**: Approve layout → Validate required artifacts → Build ZIP package → Download package
+- **Success criteria**: The ZIP contains source data, knowledge, requirements, theme, editable layout, and agent build instructions; it does not claim to be a completed `.pbix`
+
+### Automated PBIP Generation — Target Milestone
+- **Functionality**: A DeepSeek Harness build agent consumes the approved package and creates a validated PBIP project through Power BI authoring tools and a Windows worker
+- **Purpose**: Complete the end-to-end automation without requiring the user to run a separate agent manually
+- **Success criteria**: The PBIP opens without repair prompts, passes available schema and semantic-model validations, and matches the approved layout contract
 
 ### Progress Streaming
 - **Functionality**: Real-time display of generation progress with descriptive step messages and status indicators

@@ -7,6 +7,7 @@ import { assessRequirementsCoverage, finalizeAutomaticRequirements } from '../sr
 import { buildAutomaticRequirementsPrompt } from './requirementsAnalysis.ts';
 import { buildSourceKnowledgeChatPrompt, type SourceKnowledgeChatMessage } from './sourceKnowledgeChat.ts';
 import { PenCodexWorkspaceManager, type CodexApprovalDecision } from './codexWorkspace.ts';
+import { getHarnessStatus, harnessMode, runHarnessJson } from './harnessClient.ts';
 
 type Environment = Record<string, string>;
 
@@ -532,6 +533,8 @@ async function runDeepSeekJson(
   env: Environment,
   prompt: string,
 ) {
+  if (harnessMode(env)) return runHarnessJson(env, prompt);
+
   const apiKey = env.DEEPSEEK_API_KEY?.trim();
   if (!apiKey) throw new Error('DEEPSEEK_API_KEY is not configured. Add it to frontend/.env and restart the app.');
 
@@ -731,6 +734,15 @@ export function aiServerPlugin({ env, projectRoot }: AIServerOptions): Plugin {
     }
 
     if (path === '/api/ai/status' && req.method === 'GET') {
+      if (harnessMode(env)) {
+        const status = await getHarnessStatus(env);
+        sendJson(res, status.configured ? 200 : 503, {
+          provider: 'deepseek-harness',
+          model: env.DSH_MODEL?.trim() || 'deepseek-v4-flash',
+          ...status,
+        });
+        return;
+      }
       sendJson(res, 200, {
         provider: 'deepseek-v4',
         model: env.DEEPSEEK_MODEL?.trim() || 'deepseek-v4-pro',

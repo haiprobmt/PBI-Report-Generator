@@ -71,7 +71,10 @@ export function RequirementAnalysis({ onComplete, onBack, dataContext = [], know
   };
 
   useEffect(() => {
-    getAIStatus().then((status) => setProvider(`DeepSeek V4 · ${status.model}`)).catch(() => undefined);
+    getAIStatus().then((status) => {
+      const runtime = status.provider === 'deepseek-harness' ? 'DeepSeek Harness' : 'DeepSeek V4';
+      setProvider(`${runtime} · ${status.model}`);
+    }).catch(() => undefined);
   }, []);
 
   useEffect(() => {
