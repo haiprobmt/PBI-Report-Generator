@@ -11,8 +11,11 @@ export interface RequirementsAnalysisResult {
 }
 
 export interface AIStatus {
-  provider: 'deepseek-v4';
+  provider: 'deepseek-v4' | 'deepseek-harness';
   model: string;
+  configured?: boolean;
+  mode?: 'direct' | 'harness';
+  error?: string;
 }
 
 export interface FileAnalysisResult {

@@ -1,0 +1,2 @@
+# DeepSeek Harness is in developer preview. Pin exact versions and upgrade intentionally.
+deepseek-harness-sdk==0.1.0rc5

@@ -1,0 +1,25 @@
+# Local runtime and dependency output
+node_modules/
+.vite/
+dist/
+coverage/
+*.log
+__pycache__/
+*.py[cod]
+
+# Local secrets
+.env
+.env.*
+!.env.example
+
+# DeepSeek Harness runtime state
+.harness-sessions/
+.harness-workspaces/
+
+# Generated analysis output
+graphify-out/cache/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
